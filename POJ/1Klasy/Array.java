@@ -20,10 +20,10 @@ class Array {
 		// korzystanie z tablicy
 		System.out.println("Kwiecien ma " + month_days[14] + " dni");
 		
-		String s[];
-		s = new String[3];
-		s[0] = "sdrswserw";
-		System.out.println(s[0]);
-		System.out.println(s[1]);
+//		String s[];
+//		s = new String[3];
+//		s[0] = "sdrswserw";
+//		System.out.println(s[0]);
+//		System.out.println(s[1]);
 	}
 }

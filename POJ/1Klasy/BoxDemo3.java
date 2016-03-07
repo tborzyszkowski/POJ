@@ -50,7 +50,7 @@ class BoxDemo3{
 	// utworzenie instancji klasy Box
 	Box3 myBox1 = new Box3();
 	Box3 myBox2 = new Box3(2);
-	Box3 myBox3 = new Box3(3, 4.0, 5);
+	Box3 myBox3 = new Box3(3, 4, 5);
 
 	// wypisujemy objetosci 
 	System.out.println("\nObjetosc myBox1 = " + myBox1.volume());

@@ -42,6 +42,6 @@ class OverloadDemo {
 //		ob.test();
 //		ob.test(10L);
 //		ob.test(10, 20);
-		System.out.println("test = " + ob.test(123.0f));
+		System.out.println("test = " + ob.test(123));
 	}
 }

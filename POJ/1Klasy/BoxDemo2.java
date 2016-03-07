@@ -12,8 +12,8 @@ class BoxDemo2 {
 	public static void main(String args[]) {
 		// utworzenie dwoch instancji klasy Box
 		Box1 myBox1 = new Box1();
-		//Box1 myBox2 = new Box1();
-		Box1 myBox2 = myBox1;
+		Box1 myBox2 = new Box1();
+		//Box1 myBox2 = myBox1;
 		double vol;
 
 		// wpisujemy dane do myBox1
