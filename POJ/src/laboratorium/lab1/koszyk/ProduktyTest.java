@@ -16,7 +16,12 @@ public class ProduktyTest {
 				999,
 				777));
 		
+		// wszystkie produkty
 		System.out.println(produkty);
+		// najdrozszy produkt
+		System.out.println("najdroższy:" + produkty.najdrozszyProdukt());
+		System.out.println("suma cen:" + produkty.sumaCenProduktów());
+		
 	}
 
 }

@@ -16,12 +16,24 @@ public class Produkty {
 	
 	Produkt najdrozszyProdukt(){
 		int najdrozszyIdx = 0;
-		for(int i = 1; i < lista.length; i++){
+		for(int i = 1; i < wolnyProduktIdx; i++){
 			if (lista[najdrozszyIdx].cena < lista[i].cena) {
 				najdrozszyIdx = i;
 			}
 		}
 		return lista[najdrozszyIdx];
+	}
+	
+	void sortujPoCenie(){
+		// TODO: zobacz http://wazniak.mimuw.edu.pl/index.php?title=Algorytmy_i_struktury_danych/Sortowanie_-_BubbleSort%2C_SelectionSort%2C_InsertionSort
+	}
+	
+	double sumaCenProduktów(){
+		double suma = 0;
+		for(int i = 0; i < wolnyProduktIdx; i++){
+			suma += lista[i].cena;
+		}
+		return suma;
 	}
 	
 	public String toString(){
