@@ -29,7 +29,7 @@ class Overload {
 		System.out.println("double a = " + a);
 		return a * a;
 	}
-	double test(float a) {
+	float test(float a) {
 		System.out.println("float a = " + a);
 		return a * a;
 	}
@@ -42,6 +42,6 @@ class OverloadDemo {
 //		ob.test();
 //		ob.test(10L);
 //		ob.test(10, 20);
-		System.out.println("test = " + ob.test(123));
+		System.out.println("test = " + ob.test(123.0F));
 	}
 }

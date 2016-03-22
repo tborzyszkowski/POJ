@@ -19,6 +19,7 @@ class Static2 {
 		Static21.callMe();
 		// dostep do zmiennej statycznej
 		System.out.println("b = " + Static21.b);
+		// System.out.println("c = " + Static21.c);
 
 		Static21 ob1 = new Static21();
 		Static21 ob2 = new Static21();
