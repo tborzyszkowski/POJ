@@ -3,7 +3,7 @@ package laboratorium.lab1.koszyk;
 public class ProduktyTest {
 
 	public static void main(String[] args) {
-		Produkty produkty = new Produkty();
+		Cart produkty = new Cart();
 		
 		produkty.add(new Produkt(
 				"A0001", 
