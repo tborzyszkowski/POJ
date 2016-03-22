@@ -1,28 +1,38 @@
 package laboratorium.lab1.koszyk;
 
-public class Cart {
+public class Koszyk {
 	// Założenie: maksymalnie 10 produktów
-	Produkt [] lista = new Produkt[10];
+	Produkt[] zakupy;
+	IPromotion[] promocje;
+	
 	int wolnyProduktIdx = 0;
 	double sumaKoszyka = 0;
+	double sumaPromocyjnaKoszyka = 0;
+	
+	Koszyk(int size, IPromotion[] promocje){
+		zakupy = new Produkt[size];
+		this.promocje = promocje;
+	}
 	
 	void add(Produkt p){
-		if (wolnyProduktIdx < lista.length){
-			lista[wolnyProduktIdx] = p;
+		if (wolnyProduktIdx < zakupy.length){
+			zakupy[wolnyProduktIdx] = p;
 			wolnyProduktIdx++;
 		} else {
 			System.out.println("Tablica produktów pełna");
 		}
+		sumaKoszyka += p.cena;
+		sumaPromocyjnaKoszyka += p.cena;
 	}
 	
 	Produkt najdrozszyProdukt(){
 		int najdrozszyIdx = 0;
 		for(int i = 1; i < wolnyProduktIdx; i++){
-			if (lista[najdrozszyIdx].cena < lista[i].cena) {
+			if (zakupy[najdrozszyIdx].cena < zakupy[i].cena) {
 				najdrozszyIdx = i;
 			}
 		}
-		return lista[najdrozszyIdx];
+		return zakupy[najdrozszyIdx];
 	}
 	
 	void sortujPoCenie(){
@@ -32,17 +42,25 @@ public class Cart {
 	double sumaCenProduktów(){
 		double suma = 0;
 		for(int i = 0; i < wolnyProduktIdx; i++){
-			suma += lista[i].cena;
+			suma += zakupy[i].cena;
 		}
 		sumaKoszyka = suma;
 		return suma;
 	}
 	
+	void zastosujPromocje(){
+		for(IPromotion p : promocje){
+			p.CalculateOffer(this);
+		}
+	}
+	
+	
 	public String toString(){
 		String wynik = "[\n";
 		for(int i = 0; i < wolnyProduktIdx; i++)
-			wynik += lista[i].toString() + "\n";
-		wynik += "]";
+			wynik += zakupy[i].toString() + "\n";
+		wynik += " suma koszyka: " + sumaKoszyka + 
+				"\n suma promocyjna: " + sumaPromocyjnaKoszyka+ " ]";
 		return wynik;
 	}
 }
