@@ -13,7 +13,7 @@ class AK {
 }
 class BK extends AK {
     BK(int i) {
-    	super(i+1);
+    	//super(i+1);
     	System.out.println("Konstruktor z B");
     }
     BK(){//super();

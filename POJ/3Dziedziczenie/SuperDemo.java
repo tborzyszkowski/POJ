@@ -3,13 +3,8 @@
 class A {
 	int i;
 
-	A() {
-		i = 5;
-	}
-
-	A(int i) {
-		this.i = i;
-	}
+	A() { i = 5;}
+	A(int i) {this.i = i;}
 }
 
 class B extends A {
@@ -19,7 +14,7 @@ class B extends A {
 	B(int a, int b) {
 		// i = 1;
 		super(a);
-		// super.i = a+1; // odwolania do i w A
+		super.i = a+1; // odwolania do i w A
 		i = b;
 	}
 

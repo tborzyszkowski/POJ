@@ -4,10 +4,10 @@ abstract class A_1 {
     abstract void callMe();
     // zwykle, tj. w pelni zdefiniowane metody 
     // sa takze dozwowlone w klasach abstrakcyjnych
-//    void callMeToo() {
-//    	System.out.println("A: callMeToo");
-//    	callMe();
-//    }
+    void callMeToo() {
+    	System.out.println("A: callMeToo");
+    	callMe();
+    }
 }
 class B_1 extends A_1 {
     // definiujemy callMe(), 
