@@ -24,6 +24,7 @@ abstract public class Pracownik {
 	}
 
 	abstract double wyplata();
+	
 	public String getImie() {
 		return imie;
 	}
