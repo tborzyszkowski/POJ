@@ -17,6 +17,23 @@ public class PracownikFizyczny extends Pracownik {
 		this.normaGodzinowa = normaGodzinowa;
 	}
 
+	@Override
+	public String toString() {
+		return "PracownikFizyczny [stawkaGodzinowa=" + stawkaGodzinowa + ", przepracowaneGodziny="
+				+ przepracowaneGodziny + ", kwalifikacje=" + kwalifikacje + ", normaGodzinowa=" + normaGodzinowa + "]";
+	}
+
+	public int przepracowaneNadgodziny(){
+		// ( warunek ? wartosc dla True : wartosc dla False )
+		return (normaGodzinowa >= przepracowaneGodziny ? 0 : przepracowaneGodziny - normaGodzinowa);
+	}
+	
+	public double wyplata(){
+		int zwykleGodziny = (przepracowaneGodziny<=normaGodzinowa ? przepracowaneGodziny : normaGodzinowa);
+		return zwykleGodziny * stawkaGodzinowa + 
+				przepracowaneNadgodziny() * stawkaGodzinowa * 1.1;
+	}
+	
 	public double getStawkaGodzinowa() {
 		return stawkaGodzinowa;
 	}

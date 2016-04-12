@@ -13,6 +13,12 @@ public class Pracownik {
 		this.kierownik = kierownik;
 	}
 
+	@Override
+	public String toString() {
+		return "Pracownik [imie=" + imie + ", nazwisko=" + nazwisko + ", rokUrodzenia=" + rokUrodzenia + ", kierownik="
+				+ kierownik + "]";
+	}
+
 	public String getImie() {
 		return imie;
 	}
