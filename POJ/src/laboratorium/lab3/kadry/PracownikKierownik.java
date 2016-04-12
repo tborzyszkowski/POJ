@@ -21,12 +21,12 @@ public class PracownikKierownik extends Pracownik {
 
 	@Override
 	public String toString() {
-		return "PracownikKierownik ["+
+		return "PracownikKierownik [\n\t"+
 				super.toString()+
-				", ryczalt=" + ryczalt + 
-				", premiaProcent=" + premiaProcent + 
-				", dodatek=" + dodatek
-				+ ", telefon=" + telefon + 
+				", \n\tryczalt=" + ryczalt + 
+				", premia=" + premiaProcent + 
+				", dodatek=" + dodatek + 
+				", \n\ttelefon=" + telefon + 
 				", nrPokoju=" + nrPokoju + 
 				", dzial=" + dzial + "]";
 	}

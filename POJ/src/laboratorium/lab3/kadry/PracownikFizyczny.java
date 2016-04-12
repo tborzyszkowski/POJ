@@ -19,8 +19,13 @@ public class PracownikFizyczny extends Pracownik {
 
 	@Override
 	public String toString() {
-		return "PracownikFizyczny [stawkaGodzinowa=" + stawkaGodzinowa + ", przepracowaneGodziny="
-				+ przepracowaneGodziny + ", kwalifikacje=" + kwalifikacje + ", normaGodzinowa=" + normaGodzinowa + "]";
+		return "PracownikFizyczny [\n\t"+
+				super.toString() + 
+				"\n\tstawka=" + stawkaGodzinowa + 
+				", przepracowane=" + przepracowaneGodziny +
+				", normaGodzinowa=" + normaGodzinowa +
+				", \n\tkwalifikacje=" + kwalifikacje + 
+				"]";
 	}
 
 	public int przepracowaneNadgodziny(){

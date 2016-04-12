@@ -1,6 +1,6 @@
 package laboratorium.lab3.kadry;
 
-public class Pracownik {
+abstract public class Pracownik {
 	private String imie;
 	private String nazwisko;
 	private int rokUrodzenia;
@@ -15,12 +15,15 @@ public class Pracownik {
 
 	@Override
 	public String toString() {
-		return 	"imie=" + imie + 
-				", nazwisko=" + nazwisko + 
-				", rokUrodzenia=" + rokUrodzenia + 
-				", kierownik=" + kierownik;
+		return 	"Pracownik(" + imie + 
+				", " + nazwisko + 
+				", " + rokUrodzenia +
+				", " + this.wyplata() + 
+				(kierownik == null ? "" : ", \n\tkierownik=\n\t" + kierownik) + 
+				")";
 	}
 
+	abstract double wyplata();
 	public String getImie() {
 		return imie;
 	}

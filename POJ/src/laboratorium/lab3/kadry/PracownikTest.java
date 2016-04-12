@@ -1,5 +1,8 @@
 package laboratorium.lab3.kadry;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PracownikTest {
 
 	public static void main(String[] args) {
@@ -8,6 +11,16 @@ public class PracownikTest {
 				20, 500, "997", "111", "komunikacja");
 
 		System.out.println(pk);
+		
+		List<String> kwalifikacje = new ArrayList<String>();
+		kwalifikacje.add("biega");
+		kwalifikacje.add("krzyczy");
+		
+		PracownikFizyczny pf = new PracownikFizyczny(
+				"Hermenegilda", "Kociubińska", 1980, pk, 12, 200, 
+				kwalifikacje, 160);
+
+		System.out.println(pf);
 	}
 
 }
