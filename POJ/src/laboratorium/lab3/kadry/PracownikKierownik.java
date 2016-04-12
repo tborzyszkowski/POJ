@@ -21,10 +21,21 @@ public class PracownikKierownik extends Pracownik {
 
 	@Override
 	public String toString() {
-		return "PracownikKierownik [ryczalt=" + ryczalt + ", premiaProcent=" + premiaProcent + ", dodatek=" + dodatek
-				+ ", telefon=" + telefon + ", nrPokoju=" + nrPokoju + ", dzial=" + dzial + "]";
+		return "PracownikKierownik ["+
+				super.toString()+
+				", ryczalt=" + ryczalt + 
+				", premiaProcent=" + premiaProcent + 
+				", dodatek=" + dodatek
+				+ ", telefon=" + telefon + 
+				", nrPokoju=" + nrPokoju + 
+				", dzial=" + dzial + "]";
 	}
 
+	public double wyplata(){
+		double podstawa = ryczalt + dodatek;
+		return podstawa * (1 + premiaProcent/100.0);
+	}
+	
 	public double getRyczalt() {
 		return ryczalt;
 	}

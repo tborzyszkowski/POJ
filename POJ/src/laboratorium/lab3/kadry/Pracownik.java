@@ -15,8 +15,10 @@ public class Pracownik {
 
 	@Override
 	public String toString() {
-		return "Pracownik [imie=" + imie + ", nazwisko=" + nazwisko + ", rokUrodzenia=" + rokUrodzenia + ", kierownik="
-				+ kierownik + "]";
+		return 	"imie=" + imie + 
+				", nazwisko=" + nazwisko + 
+				", rokUrodzenia=" + rokUrodzenia + 
+				", kierownik=" + kierownik;
 	}
 
 	public String getImie() {
