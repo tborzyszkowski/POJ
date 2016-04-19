@@ -1,8 +1,8 @@
-package protection.p2;
+package protection.p1.p11;
 
-public class Protection2 extends protection.p1.Protection {
+public class Protection11 extends protection.p1.Protection {
 
-	public Protection2() {
+	public Protection11() {
 		System.out.println("konstruktor klasy dziedziczacej w innym pakiecie");
 
 		// tylko dla klasy lub pakietu

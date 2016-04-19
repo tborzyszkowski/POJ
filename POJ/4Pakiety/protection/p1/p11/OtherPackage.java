@@ -1,4 +1,4 @@
-package protection.p2;
+package protection.p1.p11;
 
 class OtherPackage {
 

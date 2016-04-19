@@ -1,7 +1,7 @@
 package Sortowanie;
 
 /**
- * Klasa element�w do posortowania.
+ * Klasa elementów do posortowania.
  *   @author {@link http://julia.univ.gda.pl/~mattb/ Tomasz Borzyszkowski}
  *   @version 1.0    
  */
@@ -25,7 +25,7 @@ public class ElemInt extends Element {
 	return x;
     }
     /** 
-     *  Metoda por�wnuj�ca wymagana przez interfejs Comparable
+     *  Metoda porównująca wymagana przez interfejs Comparable
      *  @return 1 = wieksze; 0 = r�wne; -1 = mniejsze
      *  czasem wymaga si� by (a.compareTo(e)==0) == (a.equals(e))
      */

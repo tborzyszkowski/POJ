@@ -12,10 +12,10 @@ public class Sortuj {
      * @param dlugosc ilo�� element�w do posortowania
      */
     public Sortuj(int dlugosc){
-	elms = new Element[dlugosc];
-	indeksy = new int[dlugosc];
-	for(int i = 0; i < dlugosc; i++) 
-	    indeksy[i] = i;
+    	elms = new Element[dlugosc];
+    	indeksy = new int[dlugosc];
+    	for(int i = 0; i < dlugosc; i++) 
+    		indeksy[i] = i;
     }
     /**
      *  Dodaje elementy do posortowania

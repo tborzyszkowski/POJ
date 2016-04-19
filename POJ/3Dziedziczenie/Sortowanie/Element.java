@@ -1,9 +1,9 @@
 package Sortowanie;
 
 /** 
- *   Klasa nadrz�dna element�w, kt�re bedziemy chcieli sortowa�.
+ *   Klasa nadrzędna elementów, które bedziemy chcieli sortować.
  *   Niczego nie zawiera.
- *   Ka�da klasa potomna musi implementowa� metod� 
+ *   Każda klasa potomna musi implementować metodę 
  *   int compareTo(Object o);
  *   @author Tomasz Borzyszkowski
  *   @version 1.0   

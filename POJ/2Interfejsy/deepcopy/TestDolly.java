@@ -8,7 +8,7 @@ public class TestDolly {
 		System.out.println("D: " + d);
 		System.out.println("D2: "+ d2);
 		d.getE().setI(123);
-		d.setW(321);;
+		d.setW(321);
 		System.out.println("D: " + d);
 		System.out.println("D2: "+ d2);
 	}

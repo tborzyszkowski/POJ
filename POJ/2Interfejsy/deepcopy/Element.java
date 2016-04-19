@@ -1,6 +1,6 @@
 package deepcopy;
 
-public class Element implements Cloneable {
+public class Element extends Foo implements Cloneable {
 	private int i = 5;
 	
 	public Element clone() {
