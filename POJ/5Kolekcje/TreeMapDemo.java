@@ -26,6 +26,8 @@ class TreeMapDemo {
 		// zwiekszamy zarobki Jana Kowalskiego o 1000
 		double balance = tm.get("Jan Kowalski").doubleValue();
 		tm.put("Jan Kowalski", new Double(balance + 1000));
+		Double res = tm.put("Jan Kowalski", new Double(balance + 1000));
+		System.out.println("---> Jan Kowalski: " + res);
 
 		// wyswietlanie tradycyjne
 		for (Iterator<Map.Entry<String, Double>> i = set.iterator(); i

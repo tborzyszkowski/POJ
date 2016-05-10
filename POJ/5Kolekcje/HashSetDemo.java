@@ -17,6 +17,7 @@ class HashSetDemo{
 		System.out.println(hs);
 
 	hs.add("W"); hs.add("V"); hs.add("X");
+	hs.add("B"); hs.add("I"); hs.add("P");
 	hs.add("Y"); hs.add("Z");
 	hs.add("1"); hs.add("2"); hs.add("3");
 	hs.add("4"); hs.add("5");

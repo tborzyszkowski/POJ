@@ -25,8 +25,9 @@ class HashMapDemo {
 
 		// zwiekszamy zarobki Jana Kowalskiego o 1000
 		double balance = hm.get("Jan Kowalski").doubleValue();
-		hm.put("Jan Kowalski", new Double(balance + 1000));
-
+		Double res = hm.put("Jan Kowalski", new Double(balance + 1000));
+		System.out.println("---> Jan Kowalski: " + res);
+		
 		// wyswietlanie tradycyjne
 		for (Iterator<Map.Entry<String, Double>> i = set.iterator(); i
 				.hasNext();) {

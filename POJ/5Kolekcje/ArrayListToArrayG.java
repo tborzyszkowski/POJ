@@ -10,7 +10,7 @@ class ArrayListToArrayG {
 		a1.add(new Integer(2));
 		a1.add(new Integer(3));
 		a1.add(new Integer(4));
-		// a1.addAll("AAAA");
+//		 a1.addAll("AAAA");
 
 		System.out.println("Zawartosc a1: " + a1);
 
@@ -24,6 +24,6 @@ class ArrayListToArrayG {
 			sum += ia[i].intValue();
 
 		System.out.println("Suma = " + sum);
-		//a1.stream().forEach(e -> System.out.println(e));
+		a1.stream().forEach(e -> System.out.println(e));
 	}
 }
