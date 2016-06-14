@@ -7,7 +7,7 @@ class Exc7 {
 				int c[] = { 1 };
 				c[42] = 99; 
 			}
-		} 
+		}
 		catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("Indeks tablicy poza zakresem: " + e);
 		}

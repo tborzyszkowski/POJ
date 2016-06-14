@@ -3,13 +3,13 @@ import java.util.List;
 
 public class Sort {
 	public static void main(String args[]) {
-		List<String> l = Arrays.asList(args);
+		List<String> li = Arrays.asList(args);
 		// posortuj
-		Collections.sort(l);
-		System.out.println(l);
+		Collections.sort(li);
+		System.out.println(li);
 
 		// pomieszaj
-		Collections.shuffle(l);
-		System.out.println(l);
+		Collections.shuffle(li);
+		System.out.println(li);
 	}
 }

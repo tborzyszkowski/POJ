@@ -4,9 +4,11 @@ class Exc2 {
 		// początek testowanego bloku
 		try {
 			int d = 0;
-			//int a = 42 / d; // tu powinien być błąd
-			double a = Math.sqrt(-1);
-			System.out.println("Tego nie zobaczymy "+ a + Double.isNaN(a));
+			int a = 42 / d; // tu powinien być błąd
+//			double a = Math.sqrt(-1);
+//			System.out.println("Tego nie zobaczymy "+ (a+1) 
+//					+ " " + Double.isNaN(a));
+			System.out.println("aqq");
 		}
 		// obsługa błędu arytmetycznego (tu dzielenie przez zero)
 

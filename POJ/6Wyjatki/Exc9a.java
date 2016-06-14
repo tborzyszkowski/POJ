@@ -1,8 +1,15 @@
+import java.util.Random;
+
 class Exc9a {
-    static void throwOne() throws NullPointerException, IllegalAccessException 
+    static void throwOne() throws IllegalAccessException 
     {
     	System.out.println("Wewnątrz metody");
-    	throw new IllegalAccessException("To tylko test");
+    	Random rand = new Random();
+    	
+    	if (rand.nextBoolean())
+    		throw new IllegalAccessException("To tylko test");
+    	else 
+    		throw new ArithmeticException("To tylko test");
     }
     
     public static void main(String args[]) throws IllegalAccessException 

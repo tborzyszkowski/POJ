@@ -5,7 +5,7 @@ class HashSetDemo{
 
 	HashSet<String> hs = new HashSet<String>(13);
 
-	hs.add("A"); hs.add("H"); hs.add("O");
+	hs.add("AA"); hs.add("HH"); hs.add("O");
 	hs.add("B"); hs.add("I"); hs.add("P");
 	hs.add("C"); hs.add("J"); hs.add("Q");
 	hs.add("D"); hs.add("K"); hs.add("R");

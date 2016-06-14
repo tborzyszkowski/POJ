@@ -36,6 +36,7 @@ class ExcB {
 	}
 	finally{
 		sw.off();
+		System.out.println("Włącznik :" + sw);
 	}
 	System.out.println("Włącznik :" + sw);
     } 

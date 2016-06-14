@@ -3,12 +3,12 @@ import java.util.Set;
 import java.util.Iterator;
 
 // TU definiujemy nowy Comparator
-class TComp implements Comparator {
-	public int compare(Object a, Object b) {
+class TComp<E> implements Comparator<E> {
+	public int compare(E a, E b) {
 		int i, j, k;
-		// ciekawostka w Java 5.0 !!!
-		String aStr = (String) a;
-		String bStr = (String) b;
+		
+		String aStr = a.toString();
+		String bStr = b.toString();
 
 		// znajdz indeks poczatku nazwiska
 		i = aStr.lastIndexOf(' ');
@@ -27,7 +27,7 @@ class TComp implements Comparator {
 class TreeMapDemo2 {
 	public static void main(String args[]) {
 		TreeMap<String, Double> tm = new TreeMap<String, Double>(
-				new TComp());
+				new TComp<String>());
 
 		tm.put("Jan Kowalski", new Double(1111.11));
 		tm.put("Janusz Kowalski", new Double(1111.11));
@@ -56,5 +56,7 @@ class TreeMapDemo2 {
 			System.out.println(me.getValue());
 		}
 		System.out.println();
+		
+		System.out.println(set);
 	}
 }

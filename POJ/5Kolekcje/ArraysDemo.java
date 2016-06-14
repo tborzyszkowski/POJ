@@ -36,6 +36,6 @@ public class ArraysDemo{
 
 	// szukamy -9: poszukiwanie binarne
 	System.out.println("-9 jest na pozycji tablica  ");
-	System.out.println(Arrays.binarySearch(array, -222));
+	System.out.println(Arrays.binarySearch(array, -1));
     }
 }

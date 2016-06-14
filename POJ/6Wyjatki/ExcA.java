@@ -12,23 +12,35 @@ class  ExcA {
 			throw e;
 		}
 		finally {
-			System.out.println("finally w procA: "+ a++);
+			System.out.println("finally w procA: "+ (++a));
 			//a = a / (a-a);
 		}
 	}
 
-	static int procB() {
-		int a = 1;
+//	static int procB() {
+//		int a = 1;
+//		try {
+//			System.out.println("Wewnatrz procB");
+//			return a++;
+//		} 
+//		finally {
+//			System.out.println("finally w procB: " + a);
+//			a++;
+//		}
+//	}
+
+	static Integer procB() {
+		Integer a = 1;
 		try {
-			System.out.println("Wewnatrz procB");
+			System.out.println("Wewnatrz procB: " + a);
 			return a++;
 		} 
 		finally {
-			System.out.println("finally w procB: " + a);
+			System.out.println("finally w procB-1: " + a);
 			a++;
+			System.out.println("finally w procB-2: " + a);
 		}
 	}
-
 	static void procC() {
 		try {
 			System.out.println("Wewnatrz procC");
@@ -37,13 +49,13 @@ class  ExcA {
 		}
 	}	    
 	public static void main(String args[]) {
-		try {
-			procA();
-		}
-		catch (Exception e) {
-			System.out.println("Main: wyjatek z procA obsłużony"+e);
-		}
-		System.out.println("B: " + procB());
+//		try {
+//			procA();
+//		}
+//		catch (Exception e) {
+//			System.out.println("Main: wyjatek z procA obsłużony"+e);
+//		}
+//		System.out.println("B: " + procB());
 		procC();
 	}
 }
