@@ -22,10 +22,11 @@ public class Odcinek {
 		return "["+a+", "+b+"]";
 	}
 	public double dlugosc(){
-		return Math.sqrt(((a.getX()-b.getX())*(a.getX()-b.getX()) + 
-				(a.getY()-b.getY())*(a.getY()-b.getY())));
+		return a.odleglosc(b);
 	}
-	public double odlegloscPunktu(Punkt a){
-		return 1;
+	public double odlegloscPunktu(Punkt p){
+		double kier = (b.getY() - a.getY()) / (b.getX() - a.getX());
+		double cz1 = (b.getX() * a.getY() - a.getX() * b.getY()) / (b.getX() - a.getX());
+		return Math.abs(kier * p.getX() - p.getY() + cz1) / Math.sqrt(kier * kier + 1);
 	}
 }
