@@ -33,4 +33,8 @@ public class Punkt {
 	public String toString(){
 		return "("+x+", "+y+")";
 	}
+	
+	public double odleglosc(Punkt p){
+		return Math.sqrt((x-p.x)*(x-p.x)+(y-p.y)*(y-p.y));
+	}
 }
