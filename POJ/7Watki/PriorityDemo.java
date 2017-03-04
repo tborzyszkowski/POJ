@@ -30,7 +30,7 @@ class Clicker implements Runnable {
 class PriorityDemo {
 	public static void main(String args[]) {
 		Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
-		int n = 2;
+		int n = 5;
 
 		Clicker hi[] = new Clicker[n];
 		for (int i = 0; i < n; i++)
