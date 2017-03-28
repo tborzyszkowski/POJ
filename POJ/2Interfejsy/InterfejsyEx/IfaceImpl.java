@@ -9,10 +9,11 @@ class A{
 
 class B extends A implements Wymaganie{	
 }
+
 public class IfaceImpl {
 	public static void main(String[] args) {
 		Wymaganie zm  = new B();
-		//Wymaganie zm2 = new A();
+//		Wymaganie zm2 = new A();
 		zm.f();
 	}
 }

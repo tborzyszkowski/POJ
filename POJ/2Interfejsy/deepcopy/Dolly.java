@@ -7,8 +7,8 @@ public class Dolly implements Cloneable {
 	public Dolly clone(){
 		try {
 			Dolly cloned = (Dolly) super.clone();
-			cloned.e = (Element) e.clone();
-//			cloned.e = e;
+//			cloned.e = (Element) e.clone();
+			cloned.e = e;
 			return cloned;
 		} catch (CloneNotSupportedException e) {
 			System.out.println(e);

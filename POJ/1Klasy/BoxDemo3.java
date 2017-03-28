@@ -29,6 +29,11 @@ class Box3{
     	height = h; 
     	depth  = d;
     }
+    Box3(int w, double h, double d) {
+    	width  = -w; 
+    	height = -h; 
+    	depth  = -d;
+    }
     // metoda zmieniajaca zawartosc obiektu
     // ale nie bedaca konstruktorem
     // nic nie zwraca, wiec typ wynikowy to void
@@ -50,7 +55,7 @@ class BoxDemo3{
 	// utworzenie instancji klasy Box
 	Box3 myBox1 = new Box3();
 	Box3 myBox2 = new Box3(2);
-	Box3 myBox3 = new Box3(3.0, 4.0, 5.0);
+	Box3 myBox3 = new Box3(3, 4, 5.0);
 
 	// wypisujemy objetosci 
 	System.out.println("\nObjetosc myBox1 = " + myBox1.volume());

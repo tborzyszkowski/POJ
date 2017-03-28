@@ -1,17 +1,18 @@
 package deepcopy;
 
-public class Element extends Foo implements Cloneable {
+public class Element //extends Foo 
+implements Cloneable {
 	private int i = 5;
 	
 	public Element clone() {
-		try {
-			Element cloned = (Element) super.clone();
+		//try {
+			Element cloned = new Element();//(Element) super.clone();
 			cloned.i = i;
 			return cloned;
-		} catch (CloneNotSupportedException e) {
-			System.out.println(e);
-			return null;
-		}
+//		} catch (CloneNotSupportedException e) {
+//			System.out.println(e);
+//			return null;
+//		}
 	}
 	
 	public String toString() {

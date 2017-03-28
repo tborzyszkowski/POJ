@@ -7,6 +7,7 @@ interface Soldat{
 interface Pilkarz{
 	void Strzelaj();
 }
+
 public class Zolnierz implements Soldat, Pilkarz{
 
 	public void Strzelaj() {

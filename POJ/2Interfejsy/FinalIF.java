@@ -21,6 +21,8 @@ class Question implements SharedConstants {
 			return YES; // 30%
 		else if (prob < 75)
 			return LATER; // 15%
+		else if (prob < 85)
+			return MAYBE; // 10%
 		else if (prob < 98)
 			return SOON; // 13%
 		else
@@ -55,14 +57,22 @@ class AskMe implements SharedConstants {
 
 	public static void main(String args[]) {
 		Question q = new Question();
-
-		answer(q.ask());
-		answer(q.ask());
-		answer(q.ask());
-		answer(q.ask());
-		answer(q.ask());
-		answer(q.ask());
-		answer(q.ask());
-		answer(q.ask());
+		int wyniki[] = {0, 0, 0, 0, 0, 0};
+		int n = 100 * 1000 * 1000;	
+		for(int i = 0; i < n; i++){
+			wyniki[q.ask()]++;
+		}
+		for(int i = 0; i<wyniki.length; i++){
+			answer(i);
+			System.out.println((100.0 *wyniki[i]) / n );
+		}
+//		answer(q.ask());
+//		answer(q.ask());
+//		answer(q.ask());
+//		answer(q.ask());
+//		answer(q.ask());
+//		answer(q.ask());
+//		answer(q.ask());
+//		answer(q.ask());
 	}
 }

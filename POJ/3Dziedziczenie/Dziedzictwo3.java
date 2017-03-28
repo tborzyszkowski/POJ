@@ -3,66 +3,74 @@ import java.util.Random;
 // Przyklad wskazywania klasy podrzednej 
 // przez zmienna  klasy nadrzednej 
 // Klasa nadrzedna
-class A3 {
-    int i, j;
-    // ustawianie wartosci
-    void setA(int a, int b) {
-    	i = a;
-    	j = b;
-    }
+class A30 {
+	int i, j;
+
+	// ustawianie wartosci
+	void setA(int a, int b) {
+		i = a;
+		j = b;
+	}
 }
+
 // Klasa podrzedna
-class B3 extends A3 {
-    int k;
-    // ustawianie wartosci
-    void setB(int a, int b, int c) {
-    	setA(a,b);
-    	k = c;
-    }
-}
-class B33 extends A3{
+class B31 extends A30 {
 	int k;
-    void setB(int a, int b, int c) {
-    	setA(a,b);
-    	k = c;
-    }
+
+	// ustawianie wartosci
+	void setB(int a, int b, int c) {
+		setA(a, b);
+		k = c;
+	}
+}
+
+class B32 extends A30 {
+	int k;
+
+	void setB(int a, int b, int c) {
+		setA(a, b);
+		k = c;
+	}
 }
 
 class Dziedzictwo3 {
-    public static void main(String args[]) {
-    	A3 obA = new A3();
-    	B3 obB = new B3();
-    	B33 obB33 = new B33();
+	public static void main(String args[]) {
+		A30 obA0 = new A30();
+		B31 obB1 = new B31();
+		B32 obB2 = new B32();
 
-	// ustawiamy wartosci
-    	obA.setA(10,20);
-    	obB.setB(1,2,3);
-    	obB33.setB(-1, -2, -3);
+		// ustawiamy wartosci
+		obA0.setA(10, 20);
+		obB1.setB(1, 2, 3);
+		obB2.setB(-1, -2, -3);
 
-	// wypisujemy zawartosc
-    	System.out.println("Zawartosc A: ");
-    	System.out.println(" i = " + obA.i + " j = " + obA.j);
-    	System.out.println("Zawartosc B: ");
-    	System.out.println(" i = " + obB.i + " j = " + obB.j + 
-    			" k = " + obB.k + "\n");
-	
-    // obA bedzie wskazywal na obB
-    	Random r = new Random();
-    	if (r.nextBoolean())
-    		obA = obB;
-    	else
-    		obA = obB33;
-    //	obB = obA;
-	// wypisujemy zawartosc
-    	System.out.println("Zawartosc A: ");
-    	System.out.println(" i = " + obA.i + " j = " + obA.j);
-    	//System.out.println(" k = " + obA.k );
-        // czy dostepne bedzie k
-//    	System.out.println(" k = " + ((B3)obA).k);
-    	System.out.println(obA.getClass());
-    	if(obA instanceof B3)
-    		System.out.println(" k = " + ((B3)obA).k);
-    	else
-    		System.out.println("Zly typ");
-   }
+		// wypisujemy zawartosc
+		System.out.println("Zawartosc A: ");
+		System.out.println(" i = " + obA0.i + " j = " + obA0.j);
+		System.out.println("Zawartosc B: ");
+		System.out.println(" i = " + obB1.i + " j = " + obB1.j + " k = " + obB1.k + "\n");
+
+		// obA bedzie wskazywal na obB
+		Random r = new Random();
+		Boolean b = r.nextBoolean();
+		System.out.println(b);
+		if (b)
+			obA0 = obB1;
+		else
+			obA0 = obB2;
+		// obB = obA;
+		// wypisujemy zawartosc
+		System.out.println("Zawartosc A: ");
+		System.out.println(" i = " + obA0.i + " j = " + obA0.j);
+		// System.out.println(" k = " + obA.k );
+		// czy dostepne bedzie k
+		// System.out.println(" k = " + ((B3)obA).k);
+		System.out.println(obA0.getClass());
+		if (obA0 instanceof B31)
+			System.out.println(" k = " + ((B31) obA0).k);
+		else if (obA0 instanceof B32)
+			System.out.println(" k = " + ((B32) obA0).k);
+		else
+			System.out.println("Zly typ");
+	}
 }
