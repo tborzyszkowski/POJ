@@ -14,13 +14,13 @@ class B extends A {
 	B(int a, int b) {
 		// i = 1;
 		super(a);
-		//super.i = a+1; // odwolania do i w A
+		super.i = a+1; // odwolania do i w A
 		i = b;
 	}
 
 	// reprezentacja napisowa
 	public String toString() {
-		return "A.i = " + super.i + " B.i = " + i;
+		return "A.i = " + super.i + " B.i = " + this.i;
 	}
 }
 

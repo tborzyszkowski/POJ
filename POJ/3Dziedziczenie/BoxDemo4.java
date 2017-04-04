@@ -34,6 +34,18 @@ class Box4 {
 		depth = d;
 	}
 
+	Box4(int w, int h, int d) {
+		width = w;
+		height = h;
+		depth = d;
+	}
+
+	Box4(double w, int h, int d) {
+		width = w;
+		height = h;
+		depth = d;
+	}
+
 	// metoda zmieniajaca zawartosc obiektu
 	// ale nie bedaca konstruktorem
 	// nic nie zwraca, wiec typ wynikowy to void
@@ -78,7 +90,7 @@ class BoxWeight extends Box4 {
 	}
 
 	// konstruktor z parametrami
-	BoxWeight(double w, double h, double d, double m) {
+	BoxWeight(double w, int h, int d, double m) {
 		super(w, h, d);
 		weight = m;
 	}

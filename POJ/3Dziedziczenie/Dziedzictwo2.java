@@ -33,7 +33,7 @@ class A2 {
 
 // Klasa podrzedna
 class B2 extends A2 {
-	int k;
+	private int k;
 
 	// ustawianie wartosci
 	void setB(int a, int b, int c) {

@@ -15,7 +15,7 @@ class AO2 {
 
 	// reprezentacja napisowa
 	public String toString() {
-		return " i = " + i + " j = " + j;
+		return super.toString() + " i = " + i + " j = " + j;
 	}
 	public  void prr(AO2 a) {
 		System.out.println("AO2:" + a);
