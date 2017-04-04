@@ -5,7 +5,7 @@ public class Samochod {
 	private String model;
 	private int rocznik;
 	private int przebieg;
-	
+
 	public Samochod(String marka, String model, int rocznik, int przebieg) {
 		super();
 		this.marka = marka;
