@@ -33,3 +33,9 @@ class DynWia{
 
 // obj.methC() = C.methC(b)
 // b.testThis() = A.testThis(b) = b.test() = B.test(b) = b.m() = B.m(b) = 2
+// c.testThis() => C.testThis(c)
+//              => A.testThis(c)
+//				=> c.test()
+//				=> C.test(c)
+//   			=> B.test(c)
+//				=> c.m() = 3

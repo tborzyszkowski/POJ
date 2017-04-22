@@ -14,8 +14,8 @@ class B extends A {
 	B(int a, int b) {
 		// i = 1;
 		super(a);
-		super.i = a+1; // odwolania do i w A
-		i = b;
+		//super.i = a+1; // odwolania do i w A
+		this.i = b;
 	}
 
 	// reprezentacja napisowa
