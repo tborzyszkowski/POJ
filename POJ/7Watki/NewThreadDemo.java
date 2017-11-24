@@ -20,7 +20,7 @@ class NewThread4 implements Runnable {
 			
 			for (int i = 1000; i > 0; i--) {
 				Thread.sleep(1);
-				a++;
+				//a++;
 				//System.out.println("Nowy watek      > " + i);
 			}
 		} catch (//InterruptedException e
@@ -44,7 +44,7 @@ class NewThreadDemo {
 		try {
 			for (int i = 100; i > 0; i--) {
 				//System.out.println("Watek glowny    : " + i);
-				a++;
+				//a++;
 				Thread.sleep(10);
 			}
 		} catch (InterruptedException e) {

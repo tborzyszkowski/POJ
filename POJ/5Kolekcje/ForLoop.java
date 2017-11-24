@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 class ForLoop {
 	public static void main(String args[]) {
-		int a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-		int result = 0;
+		double a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		double result = 0;
 
 		// normalna petla for
 		for (int i = 0; i < a.length; i++)
@@ -12,8 +12,8 @@ class ForLoop {
 
 		// inna forma petli for
 		result = 0;
-		for (int i : a)
-			result += i;
+		for (double el : a)
+			result += el;
 		System.out.println(result);
 
 		ArrayList<String> al = new ArrayList<String>();

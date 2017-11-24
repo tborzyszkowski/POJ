@@ -6,7 +6,7 @@ class ArrayListDemo{
 	ArrayList a1 = new ArrayList();
 
 	System.out.println("Poczatkowy rozmiar a1: " + a1.size());
-
+	
 	a1.add("C");
 	a1.add("A");
 	a1.add("E");

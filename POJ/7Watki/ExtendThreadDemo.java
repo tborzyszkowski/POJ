@@ -18,8 +18,8 @@ class NewThread2 extends Thread {
 
 			for (int i = 1000; i > 0; i--) {
 				Thread.sleep(1);
-				a++;
-				System.out.println("Nowy watek      > " + i);
+				//a++;
+				//System.out.println("Nowy watek      > " + i);
 			}
 		} catch (// InterruptedException e
 		Exception e) {
@@ -42,7 +42,7 @@ class ExtendThreadDemo {
 		System.out.println("Watek glowny    : " + t);
 		try {
 			for (int i = 100; i > 0; i--) {
-				System.out.println("Watek glowny    : " + i);
+				//System.out.println("Watek glowny    : " + i);
 				Thread.sleep(10);
 			}
 		} catch (InterruptedException e) {

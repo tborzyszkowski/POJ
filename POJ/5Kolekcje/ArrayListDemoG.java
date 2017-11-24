@@ -14,7 +14,7 @@ class ArrayListDemoG{
 	a1.add("B");
 	a1.add("D");
 	a1.add("F");
-	a1.add(1,"A2");
+	a1.set(2,"X");
 	//a1.add(3,new Integer(3));
 	//System.out.println(a1.contains(new Integer(42)));
 	

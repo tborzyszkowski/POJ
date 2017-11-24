@@ -3,7 +3,7 @@ class Exc6 {
 		try {
 			int a = args.length;
 			int b = 42 / a;
-			System.out.println("a = " + a);
+			System.out.println("a = " + a + " b = " + b);
 			try {
 				if (a == 1)
 					a = a / (a - a);
