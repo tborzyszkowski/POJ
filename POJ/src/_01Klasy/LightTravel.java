@@ -5,7 +5,7 @@ package _01Klasy;
 class LightTravel{
     public static void main(String args[]){
 	int lightSpeed = 299792; // km/s
-	long days = 1000000000;        // badana liczba dni
+	long days = 100000000;        // badana liczba dni
 	long seconds = days * 24 * 60 * 60;   // tyle to sekund
 	long distance = lightSpeed * seconds; // tyle przebedzie swiatlo
 
