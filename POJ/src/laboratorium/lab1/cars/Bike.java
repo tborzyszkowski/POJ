@@ -20,6 +20,10 @@ public class Bike {
 		this(color, 26);
 	}
 	
+	public Bike(int inches) {
+		this("pinkish",  inches);
+	}
+	
 	public Bike() {
 		this("czerwony");
 	}
