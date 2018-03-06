@@ -26,7 +26,6 @@ class BoxDemo {
 		vol = myBox.width * myBox.height * myBox.depth;
 
 		System.out.println("Objetosc = " + vol + ".");
-		System.out.println("" + 1 + 1);
-		System.out.println(1 + 1);
+		
 	}
 }

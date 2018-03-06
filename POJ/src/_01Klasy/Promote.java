@@ -10,7 +10,7 @@ class Promote {
 		float f = 5.67f; // f na koncu oznacza liczbe float
 		double d = .1234;
 		double result = (f * b) + (i / c) - (d * s);
-		System.out.println((double)(f * b) + " + " + (i / c) + " - " + (d * s));
+		System.out.println((f * b) + " + " + (i / c) + " - " + (d * s));
 		System.out.println((f * b) +  (i / c) + " - " + (d * s));
 		System.out.println( (f * b) -  (d * s) );
 		System.out.println("result = " + result);
