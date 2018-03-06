@@ -4,10 +4,10 @@ public class Program {
 
 	public static void main(String[] args) {
 		Car car = new Car();
-		car.brand = "BMW";
-		car.isNew = true;
-		car.millage = 0;
-		car.price = 100;
+		car.setBrand("BMW");
+		car.setNew(true);
+		car.setMillage(0);;
+		car.setPrice(100);
 		
 //		System.out.println("Marka: " + car.brand);
 //		System.out.println("Nowy: " + car.isNew);

@@ -1,11 +1,44 @@
 package laboratorium.lab1.cars;
 
 public class Car {
-	String brand;
-	boolean isNew;
-	int millage;
-	double price;
+	private String brand;
+	private boolean isNew;
+	private int millage;
+	private double price;
 	
+	
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public boolean isNew() {
+		return isNew;
+	}
+
+	public void setNew(boolean isNew) {
+		this.isNew = isNew;
+	}
+
+	public int getMillage() {
+		return millage;
+	}
+
+	public void setMillage(int millage) {
+		this.millage = millage;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
 	Car(){
 		System.out.println("Iniclalizacja Car()");
 	}
