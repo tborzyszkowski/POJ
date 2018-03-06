@@ -26,10 +26,10 @@ class Box3{
     	depth  = 4*d;
     }
     // konstruktor z parametrami
-    Box3(double w, double h, double d) {
-    	width  = w; 
-    	height = h; 
-    	depth  = d;
+    Box3(double width, double height, double depth) {
+    	this.width  = width; 
+    	this.height = height; 
+    	this.depth  = depth;
     }
     Box3(int w, double h, double d) {
     	width  = -w; 
@@ -58,11 +58,13 @@ class BoxDemo3{
 	Box3 myBox1 = new Box3();
 	Box3 myBox2 = new Box3(2);
 	Box3 myBox3 = new Box3(3, 4, 5.0);
+	Box3 myBox4 = new Box3(1.0, 1.0, 1.0);
 
 	// wypisujemy objetosci 
 	System.out.println("\nObjetosc myBox1 = " + myBox1.volume());
 	System.out.println(  "Objetosc myBox2 = " + myBox2.volume());
 	System.out.println(  "Objetosc myBox3 = " + myBox3.volume());
+	System.out.println(  "Objetosc myBox4 = " + myBox4.volume());
 
 	// zmieniamy zawartosc obiektu myBox1
 	myBox1.setDim(2, 3, 2);
