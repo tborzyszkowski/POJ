@@ -17,8 +17,13 @@ public class Car {
 	
 	Car(String brand, boolean isNew, int millage, double price){
 		this(brand);
-		this.isNew = isNew;
-		this.millage = millage;
+		if (isNew) {
+			this.isNew = true;
+			this.millage = 0;
+		} else {
+			this.isNew = false;
+			this.millage = millage;
+		}
 		this.price = price;
 	}
 	public String toString() {
