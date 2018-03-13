@@ -1,5 +1,7 @@
 package laboratorium.lab2.koszyk.model;
 
+import org.junit.experimental.categories.Categories;
+
 public class MugPromotion implements IPromotion{
 
 	@Override
@@ -11,11 +13,26 @@ public class MugPromotion implements IPromotion{
 			return false;
 	}
 
+	boolean mugAdded(Cart cart) {
+		boolean itIs = false;
+		for(CartItem it : cart.getItems()) {
+			if (it.getProduct().getName().equals("Kubek promocyjny")) {
+				itIs = true;
+			}
+		}
+		return itIs;
+	}
+	
 	@Override
 	public void CalculateOffer(Cart cart) {
-		if (this.CanCalculate(cart))
+		if (this.CanCalculate(cart) && !this.mugAdded(cart))
 			cart.addProduct(new Product("Kubek promocyjny", 0.01));
 		
 	}
 
+	@Override
+	public String toString() {
+		return "MugPromotion [Kubek promocyjny]";
+	}
+	
 }

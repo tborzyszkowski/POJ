@@ -32,6 +32,7 @@ public class Main {
 		System.out.println(cart);
 
 		cart.addPromotion(new MugPromotion())
+		    .applyPromotions()
 		    .applyPromotions();
 
 		System.out.println(cart);
