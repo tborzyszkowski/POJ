@@ -13,8 +13,14 @@ public class ValuePromotion implements IPromotion{
 
 	@Override
 	public void CalculateOffer(Cart cart) {
-		if (this.CanCalculate(cart))
-			cart.promotionSumOfProducts *= 0.95;
+		if (this.CanCalculate(cart)) {
+			cart.promotionSumOfProducts = cart.totalPriceOfProducts() * 0.95;
+		}
 	}
 
+	@Override
+	public String toString() {
+		return "ValuePromotion [5% off]";
+	}
+	
 }
