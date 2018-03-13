@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Cart {
 	ArrayList<CartItem> items = new ArrayList<>();
 	ArrayList<IPromotion> promotions = new ArrayList<>();
+	double promotionSumOfProducts = 0;
 	
 	public double totalPriceOfProducts(){
 		double sum = 0;
@@ -24,6 +25,7 @@ public class Cart {
 	
 	public Cart addProduct(Product p) {
 		items.add(new CartItem(p));
+		promotionSumOfProducts += p.getPrice(); 
 		return this;
 	}
 
@@ -32,4 +34,11 @@ public class Cart {
 		return this;
 	}
 	
+	public Cart applyPromotions(){
+		for(IPromotion p : promotions){
+			p.CalculateOffer(this);
+		}
+		return this;
+	}
+
 }

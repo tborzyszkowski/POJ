@@ -25,6 +25,7 @@ public class Main {
 		// System.out.println(getSampleCart().getItems());
 		Cart cart = new Cart();
 		cart.addProduct(new Product("Kartofle", 10))
-		    .addProduct(new Product("Gazeta", 3));
+		    .addProduct(new Product("Gazeta", 3))
+		    .applyPromotions();
 	}
 }
