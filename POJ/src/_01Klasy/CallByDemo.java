@@ -15,6 +15,11 @@ class CallBy {
 		j /= 2;
 		System.out.println("Wewn: i = " + i + " j = " + j + "\n");
 	}
+	void ByInteger(Integer i, Integer j) {
+		i *= 2; // i = 2 * i
+		j /= 2;
+		System.out.println("Wewn: i = " + i + " j = " + j + "\n");
+	}
 	// metoda wywolujaca przez zmienna
 	void ByRef(CallBy o) {
 		o.a *= 2;
@@ -30,16 +35,20 @@ public class CallByDemo {
 		int j = 10;
 
 		// wartosc przed wywolaniem
-		System.out.println("Przed wywolaniem przez wartosc: ");
 		System.out.println(" i = " + i + " j = " + j);
 		ob.ByValue(i, j);
-		System.out.println("Po wywolaniu przez wartosc: ");
 		System.out.println(" i = " + i + " j = " + j + "\n");
-		System.out.println("Przed wywolaniem przez zmienna: ");
+
 		System.out.println(" a = " + ob.a + " b = " + ob.b);
 		ob.ByRef(ob);
-		System.out.println("Po wywolaniu przez zmienna: ");
 		System.out.println(" a = " + ob.a + " b = " + ob.b + "\n");
+		
+		System.out.println(" i = " + i + " j = " + j);
+		Integer ii = new Integer(i);
+		Integer jj = new Integer(j);
+		ob.ByInteger(ii, jj);
+		System.out.println(" i = " + i + " j = " + j + "\n");
+		System.out.println(" ii= " + ii+ " jj= " + jj+ "\n");
 	}
 }
 

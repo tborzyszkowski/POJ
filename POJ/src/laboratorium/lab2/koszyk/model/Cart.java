@@ -40,5 +40,10 @@ public class Cart {
 		}
 		return this;
 	}
+	@Override
+	public String toString() {
+		return "Cart [\nitems=" + items + "\npromotions=" + promotions + "\npromotionSumOfProducts="
+				+ promotionSumOfProducts + "]";
+	}
 
 }

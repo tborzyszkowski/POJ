@@ -24,8 +24,10 @@ public class Main {
 	public static void main(String[] args) {
 		// System.out.println(getSampleCart().getItems());
 		Cart cart = new Cart();
-		cart.addProduct(new Product("Kartofle", 10))
-		    .addProduct(new Product("Gazeta", 3))
+		cart.addProduct(new Product("Kartofle", 200))
+		    .addProduct(new Product("Gazeta", 99))
+		    .addPromotion(new ValuePromotion())
 		    .applyPromotions();
+		System.out.println(cart);
 	}
 }
