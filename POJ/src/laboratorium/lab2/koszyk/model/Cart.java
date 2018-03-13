@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Cart {
 	ArrayList<CartItem> items = new ArrayList<>();
+	ArrayList<IPromotion> promotions = new ArrayList<>();
 	
 	public double totalPriceOfProducts(){
 		double sum = 0;
@@ -19,6 +20,16 @@ public class Cart {
 	}
 	public ArrayList<CartItem> getItems() {
 		return items;
+	}
+	
+	public Cart addProduct(Product p) {
+		items.add(new CartItem(p));
+		return this;
+	}
+
+	public Cart addPromotion(IPromotion p) {
+		promotions.add(p);
+		return this;
 	}
 	
 }
