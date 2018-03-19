@@ -31,11 +31,16 @@ class Box3{
     	this.height = height; 
     	this.depth  = depth;
     }
-    Box3(int w, double h, double d) {
-    	width  = -w; 
-    	height = -h; 
-    	depth  = -d;
-    }
+//    Box3(int w, double h, double d) {
+//    	width  = -w; 
+//    	height = -h; 
+//    	depth  = -d;
+//    }
+//    Box3(double w, int h, double d) {
+//    	width  = -w; 
+//    	height = -h; 
+//    	depth  = -d;
+//    }
     // metoda zmieniajaca zawartosc obiektu
     // ale nie bedaca konstruktorem
     // nic nie zwraca, wiec typ wynikowy to void

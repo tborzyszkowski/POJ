@@ -8,10 +8,10 @@ class Overload {
 		System.out.println("Brak parametrow");
 	}
 	// metoda z parametrem calkowitym
-	int test(int a) {
-		System.out.println("int a = " + a);
-		return a;
-	}
+//	int test(int a) {
+//		System.out.println("int a = " + a);
+//		return a;
+//	}
 	long test(long a) {
 		System.out.println("long a = " + a);
 		return a;
@@ -44,6 +44,6 @@ class OverloadDemo {
 //		ob.test();
 		ob.test(10L);
 //		ob.test(10, 20);
-		System.out.println("test = " + ob.test(123.0));
+		System.out.println("test = " + ob.test(1.0F));
 	}
 }

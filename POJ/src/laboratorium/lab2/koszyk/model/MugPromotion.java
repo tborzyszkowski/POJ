@@ -1,6 +1,5 @@
 package laboratorium.lab2.koszyk.model;
 
-import org.junit.experimental.categories.Categories;
 
 public class MugPromotion implements IPromotion{
 

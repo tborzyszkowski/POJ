@@ -22,6 +22,8 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
+//		Product p = new Product("Jabłka", 1.69);
+//		System.out.println(p);
 		// System.out.println(getSampleCart().getItems());
 		Cart cart = new Cart();
 		cart.addProduct(new Product("Kartofle", 200))
