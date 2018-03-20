@@ -1,5 +1,6 @@
 package laboratorium.lab3.loan;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.regex.*;
 
@@ -99,7 +100,9 @@ public class Applicant {
 	@Override
 	public String toString() {
 		return "Applicant [firstName=" + firstName + ", surName=" + surName + ", pesel=" + pesel + ", nip=" + nip
-				+ ", bankAccountNumber=" + bankAccountNumber + ", gender=" + gender + ", dateOfBirth=" + dateOfBirth
+				+ ", bankAccountNumber=" + bankAccountNumber + ", gender=" + gender + ","
+				+ " dateOfBirth=" 
+				+  (dateOfBirth == null ? "null" : new SimpleDateFormat("yyyy-M-dd").format(dateOfBirth))
 				+ "]";
 	}
 
