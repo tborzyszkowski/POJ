@@ -19,7 +19,7 @@ class Outer1 {
     	inner.display();
     }
     // definicja klasy wewnetrznej
-     class Inner1 {
+	class Inner1 {
     	int x = 10;
     	//int outer_x = 101;
     	void display() {

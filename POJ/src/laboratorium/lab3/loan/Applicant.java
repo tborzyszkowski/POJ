@@ -103,6 +103,10 @@ public class Applicant {
 				+ "]";
 	}
 
+	/*
+	 * See more on regular expressions on:
+	 * http://tutorials.jenkov.com/java-regex/index.html
+	 */
 	static private boolean validatePattern(String valData, String patternString) {
 
 		Pattern pattern = Pattern.compile(patternString);
