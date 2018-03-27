@@ -26,7 +26,7 @@ public class Applicant {
 		this.dateOfBirth = dateOfBirth;
 	}
 
-	private boolean checkFirstName(String firstName) {
+	private boolean checkName(String firstName) {
 		if(firstName == null)
 			return false;
 		else if(firstName.length() < 2) 
@@ -42,7 +42,7 @@ public class Applicant {
 	}
 
 	public void setFirstName(String firstName) {
-		if (checkFirstName(firstName))
+		if (checkName(firstName))
 			this.firstName = firstName;
 		else
 			System.out.println("First Name Error:" + firstName);
@@ -53,15 +53,21 @@ public class Applicant {
 	}
 
 	public void setSurName(String surName) {
-		this.surName = surName;
+		if (checkName(surName))
+			this.surName = surName;
+		else
+			System.out.println("Surname Error:" + surName);
 	}
-
+	
 	public String getPesel() {
 		return pesel;
 	}
 
 	public void setPesel(String pesel) {
-		this.pesel = pesel;
+		if(new PeselValidator(pesel).isValid())
+			this.pesel = pesel;
+		else
+			System.out.println("PESEL Error:" + pesel);
 	}
 
 	public String getNip() {
