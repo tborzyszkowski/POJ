@@ -28,6 +28,10 @@ public class Main {
 		appl.setPesel(pesel);
 		System.out.println(appl);
 
+		String gender = "K";
+		appl.setGender(gender);
+		System.out.println(appl);
+
 		Date d = new GregorianCalendar(2018, 02, 20).getTime();
 		appl.setDateOfBirth(d);
 		System.out.println(appl);

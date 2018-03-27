@@ -79,12 +79,12 @@ public class PeselValidator {
 	public String getSex() {
 		if (valid) {
 			if (PESEL[9] % 2 == 1) {
-				return "Mezczyzna";
+				return "M";
 			} else {
-				return "Kobieta";
+				return "K";
 			}
 		} else {
-			return "---";
+			return "E";
 		}
 	}
 

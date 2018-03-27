@@ -91,7 +91,17 @@ public class Applicant {
 	}
 
 	public void setGender(String gender) {
-		this.gender = gender;
+		boolean setDone = false;
+		if(this.pesel != null) {
+			PeselValidator pv = new PeselValidator(this.pesel);
+			if(pv.isValid())
+				if(!pv.getSex().equals("E") && pv.getSex().equals(gender)) {
+					this.gender = pv.getSex();
+					setDone = true;
+				}
+		}
+		if (!setDone)
+			System.out.println("Gender Error:" + gender);	
 	}
 
 	public Date getDateOfBirth() {
