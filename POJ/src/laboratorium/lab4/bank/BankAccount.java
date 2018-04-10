@@ -11,7 +11,6 @@ public class BankAccount {
 		super();
 		this.accountNumber = accountNumber;
 		this.balance = balance;
-		this.history = history;
 	}
 
 	public void cashIncome(double amount) {
