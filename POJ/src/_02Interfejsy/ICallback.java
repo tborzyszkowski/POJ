@@ -1,16 +1,18 @@
 package _02Interfejsy;
 
+import java.util.Random;
+
 // przyklad definicji i implementacji interfejsu
 
-interface Callback {
+interface ICallback {
 	void callback(int param);
 }
 
 // klasa implementujaca interfejs
-class Client implements Callback {
+class Client implements ICallback {
 	// metoda interfejsu musi byl publiczna
 	public void callback(int p) {
-		System.out.println("callback wywolana z: " + p);
+		System.out.println("callback wywolana z Client: " + p);
 	}
 
 	// metoda dodatkowa, nie z interfejsu
@@ -24,7 +26,7 @@ class Client implements Callback {
 class TestIface {
 	public static void main(String args[]) {
 		// interfejs jako typ obiektu
-		Callback c = new Client();
+		ICallback c = new Client();
 
 		c.callback(42);
 //		c.nonIfaceMeth();
@@ -33,11 +35,10 @@ class TestIface {
 }
 
 // inna impementacja interfejsu
-class AnotherClient implements Callback {
+class AnotherClient implements ICallback {
 	// metoda interfejsu musi byl publiczna
 	public void callback(int p) {
-		System.out.println("Inna wersja callback");
-		System.out.println("p kwadrat wynosi: " + p * p);
+		System.out.println("callback wywolana z AnotherClient: " + p);
 	}
 }
 
@@ -45,13 +46,23 @@ class AnotherClient implements Callback {
 class TestIface2 {
 	public static void main(String args[]) {
 		// interfejs jako typ obiektu
-		Callback c = new Client();
+		ICallback c;
+		Client ob1 = new Client();
 		// tu klasa jako typ obiektu
-		AnotherClient ob = new AnotherClient();
+		AnotherClient ob2 = new AnotherClient();
 
+		c = ob1;
 		c.callback(33);
 		// zmieniamy referencje
-		c = ob;
+		c = ob2;
 		c.callback(5);
+		
+		Random rand = new Random();
+		if(rand.nextBoolean())
+			c = ob1;
+		else
+			c = ob2;
+		c.callback(55);
+		
 	}
 }

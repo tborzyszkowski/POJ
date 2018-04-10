@@ -17,9 +17,9 @@ public class Applicant {
 	
 	public Applicant(String firstName, String surName, String pesel, String nip, String bankAccountNumber,
 			String gender, Date dateOfBirth) {
-		this.firstName = firstName;
-		this.surName = surName;
-		this.pesel = pesel;
+		this.setFirstName(firstName);
+		this.setSurName(surName);
+		this.setPesel(pesel);
 		this.nip = nip;
 		this.bankAccountNumber = bankAccountNumber;
 		this.gender = gender;

@@ -34,27 +34,29 @@ class Question implements SharedConstants {
 }
 
 class AskMe implements SharedConstants {
-	static void answer(int result) {
+	static String answer(int result) {
+		String wynik = "";
 		switch (result) {
 		case NO:
-			System.out.println("No");
+			wynik = "No";
 			break;
 		case YES:
-			System.out.println("Yes");
+			wynik = "Yes";
 			break;
 		case MAYBE:
-			System.out.println("Maybe");
+			wynik = "Maybe";
 			break;
 		case LATER:
-			System.out.println("Later");
+			wynik = "Later";
 			break;
 		case SOON:
-			System.out.println("Soon");
+			wynik = "Soon";
 			break;
 		case NEVER:
-			System.out.println("Never");
+			wynik = "Never";
 			break;
 		}
+		return wynik;
 	}
 
 	public static void main(String args[]) {
@@ -65,9 +67,15 @@ class AskMe implements SharedConstants {
 			wyniki[q.ask()]++;
 		}
 		for(int i = 0; i<wyniki.length; i++){
-			answer(i);
-			System.out.println((100.0 *wyniki[i]) / n );
+			System.out.print(answer(i)+ "\t");
 		}
+		System.out.println();
+		for(int i = 0; i<wyniki.length; i++){
+			System.out.print(((100.0 *wyniki[i]) / n) + "\t" );
+		}
+		System.out.println();
+		System.out.println( "30\t30\t15\t10\t13\t2" );
+		
 //		answer(q.ask());
 //		answer(q.ask());
 //		answer(q.ask());

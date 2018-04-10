@@ -38,23 +38,23 @@ class MyClass implements Bbbb {
 
 class MyC extends MyClass implements Cccc {
 
-	@Override
-	public void meth1() {
-		super.meth1();
-		
-	}
-
-	@Override
-	public void meth2() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void meth3() {
-		// TODO Auto-generated method stub
-		
-	}
+//	@Override
+//	public void meth1() {
+//		super.meth1();
+//		
+//	}
+//
+//	@Override
+//	public void meth2() {
+//		// TODO Auto-generated method stub
+//		
+//	}
+//
+//	@Override
+//	public void meth3() {
+//		// TODO Auto-generated method stub
+//		
+//	}
 	
 }
 
