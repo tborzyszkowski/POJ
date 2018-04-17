@@ -12,7 +12,5 @@ public class RocznikComparator implements Comparator<Ogloszenie> {
 			return -1;
 		else
 			return 0;
-
 	}
-
 }

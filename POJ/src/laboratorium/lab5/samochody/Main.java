@@ -2,7 +2,7 @@ package laboratorium.lab5.samochody;
 
 import java.time.*;
 import java.util.ArrayList;
-import java.util.Comparator;
+//import java.util.Comparator;
 
 public class Main {
 
