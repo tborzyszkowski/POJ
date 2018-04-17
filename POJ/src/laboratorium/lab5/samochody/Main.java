@@ -2,6 +2,7 @@ package laboratorium.lab5.samochody;
 
 import java.time.*;
 import java.util.ArrayList;
+import java.util.Collections;
 //import java.util.Comparator;
 
 public class Main {
@@ -16,7 +17,8 @@ public class Main {
 				LocalDateTime.of(1980, Month.JUNE, 27, 0, 0, 0)));
 
 //		lista.sort(Comparator.comparing(ogl -> ogl.getSamochod().getRocznik()));
-		lista.sort(new RocznikComparator());
+//		lista.sort(new RocznikComparator());
+		Collections.sort(lista, new RocznikComparator());
 		System.out.println(lista);
 	}
 
