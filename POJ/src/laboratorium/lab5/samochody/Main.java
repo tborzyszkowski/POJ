@@ -20,6 +20,11 @@ public class Main {
 //		lista.sort(new RocznikComparator());
 		Collections.sort(lista, new RocznikComparator());
 		System.out.println(lista);
+		
+		System.out.println("FILTER");
+		lista.stream().filter(ogl -> ogl.getSamochod().getRocznik() > 1990);
+		System.out.println(lista);
+		
 	}
 
 }
