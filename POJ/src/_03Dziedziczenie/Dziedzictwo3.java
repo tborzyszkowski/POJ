@@ -2,24 +2,17 @@ package _03Dziedziczenie;
 
 import java.util.Random;
 
-// Przyklad wskazywania klasy podrzednej 
-// przez zmienna  klasy nadrzednej 
-// Klasa nadrzedna
 class A30 {
 	int i, j;
-
-	// ustawianie wartosci
 	void setA(int a, int b) {
 		i = a;
 		j = b;
 	}
 }
 
-// Klasa podrzedna
 class B31 extends A30 {
 	int k;
 
-	// ustawianie wartosci
 	void setB(int a, int b, int c) {
 		setA(a, b);
 		k = c;
