@@ -7,7 +7,6 @@ public class Samochod {
 	private int przebieg;
 
 	public Samochod(String marka, String model, int rocznik, int przebieg) {
-		super();
 		this.marka = marka;
 		this.model = model;
 		this.rocznik = rocznik;
