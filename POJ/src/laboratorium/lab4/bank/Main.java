@@ -16,7 +16,7 @@ public class Main {
 		
 		System.out.println(acc1);
 		System.out.println(acc2);
-		acc1.bankTransferToAccount(acc2, 45);;
+		acc1.bankTransferToAccount(acc2, 45);
 		System.out.println(acc1);
 		System.out.println(acc2);
 		

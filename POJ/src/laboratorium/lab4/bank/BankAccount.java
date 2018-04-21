@@ -21,7 +21,7 @@ public class BankAccount {
 	public void cashTaking(double amount) {
 		if (this.balance >= amount) {
 			this.balance -= amount;
-			history.add(new AccountHistoryItem(OperationType.CREDIT, "CASH", accountNumber, amount));
+			history.add(new AccountHistoryItem(OperationType.DEBIT, "CASH", accountNumber, amount));
 		}
 		else {
 			System.out.println("ERROR: cashTaking amount:" + amount +" not enough cash.");
@@ -33,6 +33,7 @@ public class BankAccount {
 			this.balance -= amount;
 			this.history.add(new AccountHistoryItem(OperationType.DEBIT, 
 										this.accountNumber, bankAccount.getAccountNumber(), amount));
+			bankAccount.setBalance(bankAccount.getBalance() + amount);
 			bankAccount.getHistory().add(new AccountHistoryItem(OperationType.CREDIT, 
 										this.accountNumber, bankAccount.getAccountNumber(), amount));
 		} else {
