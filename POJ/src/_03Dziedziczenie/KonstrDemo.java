@@ -23,8 +23,8 @@ class BK extends AK {
     }
 class CK extends BK {
     CK(int i) {
-    	super();
-    	//super(2 * i);	
+    	//super();
+    	super(2 * i);	
     	System.out.println("Konstruktor z C " + i);
     }
 }

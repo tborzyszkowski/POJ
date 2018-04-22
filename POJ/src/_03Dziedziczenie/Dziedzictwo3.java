@@ -57,9 +57,9 @@ class Dziedzictwo3 {
 		// wypisujemy zawartosc
 		System.out.println("Zawartosc A: ");
 		System.out.println(" i = " + obA0.i + " j = " + obA0.j);
-		// System.out.println(" k = " + obA.k );
+//		System.out.println(" k = " + obA.k );
 		// czy dostepne bedzie k
-		// System.out.println(" k = " + ((B31)obA0).k);
+		System.out.println(" k = " + ((B31)obA0).k);
 		System.out.println(obA0.getClass());
 		if (obA0 instanceof B31)
 			System.out.println(" k = " + ((B31) obA0).k);
