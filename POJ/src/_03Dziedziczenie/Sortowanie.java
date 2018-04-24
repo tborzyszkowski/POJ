@@ -5,7 +5,7 @@ package _03Dziedziczenie;
 /** 
  *   Klasa nadrzędna elementów, które bedziemy chcieli sortować.
  *   Niczego nie zawiera.
- *   Każda klasa potomna musi implementowa� metod� 
+ *   Każda klasa potomna musi implementowac metode 
  *   int compareTo(Object o);
  *   @author Tomasz Borzyszkowski
  *   @version 1.0   
@@ -23,14 +23,14 @@ abstract class Element implements Comparable {
 
 class Sortuj {
     /** 
-     * Zmienne prywatne klasy sortuj�cej
+     * Zmienne prywatne klasy sortującej
      */
     private Element elms[];
     private int indeksy[];
 
     /** 
      * Konstruktor klasy 
-     * @param dlugosc ilo�� element�w do posortowania
+     * @param dlugosc ilosc elementow do posortowania
      */
     public Sortuj(int dlugosc){
 	elms = new Element[dlugosc];
@@ -40,10 +40,10 @@ class Sortuj {
     }
     /**
      *  Dodaje elementy do posortowania
-     *  UWAGA: brak sprawdzania zakres�w
+     *  UWAGA: brak sprawdzania zakresow
      *  @param e dodawany element klasy potomnej @see Element
-     *  @param i miejsce, na kt�re wstawiamy element wyznaczone 
-     *  przez tablic� indeksy
+     *  @param i miejsce, na ktore wstawiamy element wyznaczone 
+     *  przez tablice indeksy
      *  @return nic
      */
     public void dodajNa(Element e, int i) {
