@@ -13,8 +13,11 @@ class LinkedListDemoG{
 	ll.add("E");
 	ll.add("C");
 	ll.addLast("Z");
+	System.out.println(ll.get(2));
 	ll.addFirst("A");
+	System.out.println(ll.get(2));
 	ll.add(1,"A2");
+	System.out.println(ll.get(2));
 	ll.add("F");
 	
 	System.out.println("Zawartosc(1) ll: " + ll);

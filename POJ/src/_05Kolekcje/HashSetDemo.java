@@ -5,8 +5,9 @@ import java.util.*;
 class HashSetDemo{
     public static void main(String args[]) {
 
-	HashSet<String> hs = new HashSet<String>(13);
-
+	HashSet<String> hs = new HashSet<>(10);
+	System.out.println(hs.isEmpty());
+	
 	hs.add("AA"); hs.add("HH"); hs.add("O");
 	hs.add("B"); hs.add("I"); hs.add("P");
 	hs.add("C"); hs.add("J"); hs.add("Q");

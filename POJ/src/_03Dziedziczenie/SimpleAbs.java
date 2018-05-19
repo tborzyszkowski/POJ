@@ -1,16 +1,13 @@
 package _03Dziedziczenie;
 
 abstract class A_1 {
-    
     abstract void callMe();
-    
     void callMeToo() {
     	System.out.println("A: callMeToo");
     	callMe();
     }
 }
 class B_1 extends A_1 {
-    
     void callMe() {
     	System.out.println("B: callMe");
     }

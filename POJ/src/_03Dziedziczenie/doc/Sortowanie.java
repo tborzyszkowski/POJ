@@ -23,7 +23,7 @@ abstract class Element implements Comparable {
  * @version 1.0
  */
 
-class Sortowanie {
+public class Sortowanie {
 	/**
 	 * Zmienne prywatne klasy sortuj�cej
 	 */
@@ -34,7 +34,7 @@ class Sortowanie {
 	 * Konstruktor klasy
 	 * 
 	 * @param dlugosc
-	 *            ilo�� element�w do posortowania
+	 *            ilość elementów do posortowania
 	 */
 	public Sortowanie(int dlugosc) {
 		elms = new Element[dlugosc];

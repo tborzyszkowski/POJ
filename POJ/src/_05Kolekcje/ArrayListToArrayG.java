@@ -12,7 +12,7 @@ class ArrayListToArrayG {
 		a1.add(new Integer(2));
 		a1.add(new Integer(3));
 		a1.add(new Integer(4));
-//		 a1.addAll("AAAA");
+//		a1.add("AAAA");
 
 		System.out.println("Zawartosc a1: " + a1);
 
