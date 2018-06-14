@@ -1,0 +1,279 @@
+
+Spawn.png
+size: 3600,3086
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Spawn
+  rotate: false
+  xy: 2, 2572
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 30
+Spawn
+  rotate: false
+  xy: 2, 2058
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 25
+Spawn
+  rotate: false
+  xy: 516, 2572
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 10
+Spawn
+  rotate: false
+  xy: 2, 1544
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 11
+Spawn
+  rotate: false
+  xy: 516, 2058
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 12
+Spawn
+  rotate: false
+  xy: 1030, 2572
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 35
+Spawn
+  rotate: false
+  xy: 2, 1030
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 14
+Spawn
+  rotate: false
+  xy: 516, 1544
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 15
+Spawn
+  rotate: false
+  xy: 1030, 2058
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 38
+Spawn
+  rotate: false
+  xy: 1030, 2058
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 37
+Spawn
+  rotate: false
+  xy: 1030, 2058
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 39
+Spawn
+  rotate: false
+  xy: 1544, 2572
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 17
+Spawn
+  rotate: false
+  xy: 2, 516
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 19
+Spawn
+  rotate: false
+  xy: 516, 1030
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 33
+Spawn
+  rotate: false
+  xy: 1030, 1544
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 13
+Spawn
+  rotate: false
+  xy: 1544, 2058
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 31
+Spawn
+  rotate: false
+  xy: 2058, 2572
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 16
+Spawn
+  rotate: false
+  xy: 2, 2
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 34
+Spawn
+  rotate: false
+  xy: 516, 516
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 22
+Spawn
+  rotate: false
+  xy: 1030, 1030
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+Spawn
+  rotate: false
+  xy: 1544, 1544
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 27
+Spawn
+  rotate: false
+  xy: 2058, 2058
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 20
+Spawn
+  rotate: false
+  xy: 2572, 2572
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 21
+Spawn
+  rotate: false
+  xy: 516, 2
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 32
+Spawn
+  rotate: false
+  xy: 1030, 516
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 24
+Spawn
+  rotate: false
+  xy: 1544, 1030
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+Spawn
+  rotate: false
+  xy: 2058, 1544
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+Spawn
+  rotate: false
+  xy: 2572, 2058
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+Spawn
+  rotate: false
+  xy: 3086, 2572
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+Spawn
+  rotate: false
+  xy: 1030, 2
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 6
+Spawn
+  rotate: false
+  xy: 1544, 516
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 7
+Spawn
+  rotate: false
+  xy: 2058, 1030
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 8
+Spawn
+  rotate: false
+  xy: 2572, 1544
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 9
+Spawn
+  rotate: false
+  xy: 3086, 2058
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 29
+Spawn
+  rotate: false
+  xy: 1544, 2
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 26
+Spawn
+  rotate: false
+  xy: 2058, 516
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 28
+Spawn
+  rotate: false
+  xy: 2572, 1030
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 36
+Spawn
+  rotate: false
+  xy: 3086, 1544
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 18
+Spawn
+  rotate: false
+  xy: 2058, 2
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 23

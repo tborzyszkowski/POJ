@@ -1,0 +1,3 @@
+ITERATOR w MAPFILE do wczytania tilesów mapy					[X]
+Factory do twożenia klocków mapy MAPTILEFACTORY					[X]
+BUILDER do creatu mapy z tilesów z faktorki LEVELBUILDER		[X]
