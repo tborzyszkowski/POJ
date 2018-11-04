@@ -9,7 +9,7 @@ class Exc2 {
 //			int a = 42 / d; // tu powinien być błąd
 			double a = Math.sqrt(-1);
 			System.out.println("Tego nie zobaczymy ||"+ (a*5)  
-					+ "|| " + Double.isNaN(a));
+					+ "|| " + Double.isNaN(a) + "||"+ a + "||" + (int)a);
 			System.out.println("aqq");
 		}
 		// obsługa błędu arytmetycznego (tu dzielenie przez zero)

@@ -9,13 +9,15 @@ class Exc9a {
     	System.out.println("Wewnątrz metody");
     	Random rand = new Random();
     	
-    	if (rand.nextBoolean())
-    		//throw new ArithmeticException("To tylko test");
-    		//throw new IOException("To tylko test");
+    	if (rand.nextBoolean()) {
     		System.out.println("True");
-    	else 
-    		//throw new IllegalAccessException("To tylko test");
+    		//throw new ArithmeticException("To tylko test");
+    		throw new IOException("To tylko test");
+    	}
+    	else { 
     		System.out.println("False");
+    		throw new IllegalAccessException("To tylko test");
+    	}
     }
     
     public static void main(String args[]) 

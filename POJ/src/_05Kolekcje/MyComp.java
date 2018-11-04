@@ -6,15 +6,15 @@ import java.util.*;
 class MyComp<E extends Comparable<E> > implements Comparator<E> {
 	public int compare(E a, E b) {
 		// odwracamy porzadek
-		return b.compareTo(a);
-//		return a.compareTo(b);
+//		return b.compareTo(a);
+		return a.compareTo(b);
 	}
 }
 
 class CompDemo {
 	public static void main(String args[]) {
 		// tworzymy obiekt klasy TreeSet z nowym porzadkiem
-		TreeSet<String> ts = new TreeSet<String>(new MyComp<String>());
+		TreeSet<String> ts = new TreeSet<String>(new MyComp<>());
 
 		ts.add("A");
 		ts.add("H");

@@ -7,7 +7,7 @@ import java.util.Iterator;
 class TreeMapDemo {
 	public static void main(String args[]) {
 
-		TreeMap<String, Double> tm = new TreeMap<String, Double>();
+		TreeMap<String, Double> tm = new TreeMap<>();
 
 		tm.put("Jan Kowalski", new Double(1111.11));
 		tm.put("Jan Nowak", new Double(2222.22));

@@ -30,7 +30,7 @@ class TreeMapDemo2 {
 	public static void main(String args[]) {
 		TreeMap<String, Double> tm = new TreeMap<String, Double>(
 				new TComp<String>());
-
+		 	
 		tm.put("Jan Kowalski", new Double(1111.11));
 		tm.put("Janusz Kowalski", new Double(1111.11));
 		tm.put("Jan Nowak", new Double(2222.22));

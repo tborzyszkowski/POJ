@@ -1,5 +1,29 @@
 package _06Wyjatki;
 
+class Value{
+	int value;
+
+	public int getValue() {
+		return value;
+	}
+
+	public Value setValue(int value) {
+		this.value = value;
+		return this;
+	}
+
+	public Value setPPValue() {
+		this.value++;
+		return this;
+	}
+
+	@Override
+	public String toString() {
+		return "Value [value=" + value + "]";
+	}
+	
+}
+
 class  ExcA {
 	static void procA() throws RuntimeException{
 		int a = 1;
@@ -22,7 +46,7 @@ class  ExcA {
 //	static int procB() {
 //		int a = 1;
 //		try {
-//			System.out.println("Wewnatrz procB");
+//			System.out.println("Wewnatrz procB: " + a);
 //			return a++;
 //		} 
 //		finally {
@@ -31,18 +55,19 @@ class  ExcA {
 //		}
 //	}
 
-	static Integer procB() {
-		Integer a = 1;
+	static Value procB() {
+		Value a = new Value().setValue(1);
 		try {
 			System.out.println("Wewnatrz procB: " + a);
-			return a++;
+			return a.setPPValue();
 		} 
 		finally {
 			System.out.println("finally w procB-1: " + a);
-			a++;
+			a.setPPValue();
 			System.out.println("finally w procB-2: " + a);
 		}
 	}
+
 	static void procC() {
 		try {
 			System.out.println("Wewnatrz procC");

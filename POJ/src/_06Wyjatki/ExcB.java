@@ -19,7 +19,7 @@ class Switch {
 class ExcB { 
     static Switch sw = new Switch(); 
     public static void main(String[] args) { 
-	try { 
+	try{ 
 	    sw.on(); 
 	    System.out.println("Włącznik :" + sw);
 	    throw new NullPointerException("To tylko test");

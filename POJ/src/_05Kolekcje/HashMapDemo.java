@@ -7,7 +7,7 @@ import java.util.Iterator;
 class HashMapDemo {
 	public static void main(String args[]) {
 
-		HashMap<String, Double> hm = new HashMap<String, Double>();
+		HashMap<String, Double> hm = new HashMap<>();
 
 		hm.put("Jan Kowalski", new Double(1111.11));
 		hm.put("Jan Nowak", new Double(2222.22));
