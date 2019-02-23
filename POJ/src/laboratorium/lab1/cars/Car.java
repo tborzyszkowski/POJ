@@ -3,7 +3,7 @@ package laboratorium.lab1.cars;
 public class Car {
 	private String brand;
 	private boolean isNew;
-	private int millage;
+	private int mileage;
 	private double price;
 	
 	Car(){
@@ -19,15 +19,15 @@ public class Car {
 		this(brand);
 		if (isNew) {
 			this.isNew = true;
-			this.millage = 0;
+			this.mileage = 0;
 		} else {
 			this.isNew = false;
-			this.millage = millage;
+			this.mileage = millage;
 		}
 		this.price = price;
 	}
 	public String toString() {
-		return "Car [brand=" + brand + ", isNew=" + isNew + ", millage=" + millage + ", price=" + price + "]";
+		return "Car [brand=" + brand + ", isNew=" + isNew + ", millage=" + mileage + ", price=" + price + "]";
 	}
 	
 	
@@ -47,12 +47,12 @@ public class Car {
 		this.isNew = isNew;
 	}
 
-	public int getMillage() {
-		return millage;
+	public int getMileage() {
+		return mileage;
 	}
 
-	public void setMillage(int millage) {
-		this.millage = millage;
+	public void setMileage(int mileage) {
+		this.mileage = mileage;
 	}
 
 	public double getPrice() {

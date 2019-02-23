@@ -6,12 +6,12 @@ public class Program {
 		Car car = new Car();
 		car.setBrand("BMW");
 		car.setNew(true);
-		car.setMillage(0);
+		car.setMileage(0);
 		car.setPrice(100);
 		
 		System.out.println("Marka: " + car.getBrand());
 		System.out.println("Nowy: " + car.isNew());
-		System.out.println("Przebieg :" + car.getMillage());
+		System.out.println("Przebieg :" + car.getMileage());
 		System.out.println("Cena :" + car.getPrice());
 		System.out.println(car);
 		
