@@ -4,7 +4,7 @@ package _01Klasy;
 class Area{
     public static void main(String args[]){
 	double pi = Math.atan(1)*4;
-	float r  = 10.0f;
+	float  r  = 10.0f;
 	double rr = 10.0f;
 	double p  = pi * r * r;
 	System.out.println("Pole kola o promieniu " + r + " wynosi " + p);
