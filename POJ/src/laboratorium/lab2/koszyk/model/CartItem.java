@@ -27,6 +27,6 @@ public class CartItem {
 
 	@Override
 	public String toString() {
-		return "CartItem [product=" + product + ", currentPrice=" + currentPrice + "]";
+		return "CartItem [" + product + ", " + currentPrice + "]";
 	}
 }
