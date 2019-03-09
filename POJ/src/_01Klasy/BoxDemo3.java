@@ -12,6 +12,7 @@ class Box3{
     	width  = 0; 
     	height = 0; 
     	depth  = 0;
+//    	this.setDim(0, 0, 0); // DRY
     }
     // konstruktor z jednym parametrem
     Box3(int n) {
@@ -31,11 +32,10 @@ class Box3{
     	this.height = height; 
     	this.depth  = depth;
     }
-//    Box3(int w, double h, double d) {
-//    	width  = -w; 
-//    	height = -h; 
-//    	depth  = -d;
-//    }
+    
+    Box3(int w, double h, double d) {
+    	this.setDim(w, h, d);
+    }
 //    Box3(double w, int h, double d) {
 //    	width  = -w; 
 //    	height = -h; 
