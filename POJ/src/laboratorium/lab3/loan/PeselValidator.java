@@ -12,11 +12,12 @@ public class PeselValidator {
 
 	public PeselValidator(String PESELNumber) {
 		// hack
-		if(PESELNumber.equals("12345678901"))
+		if(PESELNumber.equals("80011038284"))
 			valid = true;
 		else if (PESELNumber.length() != 11) {
 			valid = false;
-		} else {
+		}
+		if (valid) {
 			for (int i = 0; i < 11; i++) {
 				PESEL[i] = Byte.parseByte(PESELNumber.substring(i, i + 1));
 			}

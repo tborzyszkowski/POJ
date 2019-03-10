@@ -30,12 +30,13 @@ public class FinalAlongClassTest {
 		
 		System.out.println("fac1 = " + fac1.STALA);
 		System.out.println("fac2 = " + fac2.STALA);
+//		fac1.STALA = 8;
 		
 		FinalAlongObject fao1 = new FinalAlongObject(5);
 		FinalAlongObject fao2 = new FinalAlongObject(6);
 		
 		System.out.println("fao1 = " + fao1.STALA);
 		System.out.println("fao2 = " + fao2.STALA);
-
+//		fao1.STALA = 9;
 	}
 }
