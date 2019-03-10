@@ -10,11 +10,13 @@ public class Main {
 		iv
 			.addPozycja(new InvoiceItem("Kartofle", 3, 5, 7))
 			.addPozycja(new InvoiceItem("Mleko", 2, 2, 22));
-		
-		Invoice iv2 = new Invoice("Kaziu", "Adres", "NIP");
+				
+				
 		System.out.println(iv);
 		
-		System.out.println(iv2);
+		System.out.println(new Invoice("Ania", "Adres", "NIP")
+				.addPozycja(new InvoiceItem("Ciastka", 10, 3, 22))
+				.addPozycja(new InvoiceItem("Cukierki", 15, 2, 22)));
 	}
 
 }

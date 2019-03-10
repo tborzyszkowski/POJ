@@ -60,7 +60,7 @@ public class Invoice {
 	
 	@Override
 	public String toString() {
-		return "Invoice [nrFaktury = " + nrFaktury+ " pozycje=" + pozycje + ", klient=" + klient + ", adres=" + adres + ", nip=" + nip + "]";
+		return "Invoice [ " + nrFaktury+ " \n" + pozycje + "\n" + klient + ", " + adres + ", " + nip + " " + this.getSumaBruttoFaktury() +"]";
 	}
 	
 	

@@ -44,12 +44,12 @@ public class InvoiceItem {
 	}
 	
 	public double getSumaBrutto() {
-		return getSumaNetto() * tax;
+		return getSumaNetto() * (1+tax/100);
 	}
 
 	@Override
 	public String toString() {
-		return "Item [" + name + ", " + qty + ", " + price + ", " + tax + "]";
+		return "Item [" + name + ", " + qty + ", " + price + ", " + tax + " " + this.getSumaBrutto()+"]";
 	}
 
 }
