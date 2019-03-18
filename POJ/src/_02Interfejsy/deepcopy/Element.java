@@ -1,7 +1,7 @@
 package _02Interfejsy.deepcopy;
 
 public class Element //extends Foo 
-implements Cloneable {
+		implements Cloneable {
 	private int i = 5;
 	
 	public Element clone() {
@@ -16,7 +16,7 @@ implements Cloneable {
 	}
 	
 	public String toString() {
-		return "Element [i=" + i + "]";
+		return "Element [i=" + i + " hash = "+ this.hashCode() +"]";
 	}
 	
 	public int getI() {

@@ -35,7 +35,7 @@ class Inner1 {
     	outer.test();
     	outer.inner.display();
     	Object o = outer.inner;
-    	//outer.printInner();
+    	
     }
 }
 // UWAGA: Klasy wewnetrzne nie byly dostepne w SDK 1.0

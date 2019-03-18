@@ -7,10 +7,10 @@ class Access {
 	private int c; // dostep tylko dla klasy
 
 	// metody dostepu do c
-	void setC(int i) { // ustaw c
+	public void setC(int i) { // ustaw c
 		c = i * 2;
 	}
-	int getC() { // pobierz c
+	protected int getC() { // pobierz c
 		return c * 2;
 	}
 }

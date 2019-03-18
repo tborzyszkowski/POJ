@@ -2,7 +2,7 @@ package _01Klasy;
 
 // implementacja stosow w oparciu o tablice
 
-class Stack1 {
+class Stack1 { // kolejka LIFO
 	int stck[] = new int[10];
 	int top_of_stack;
 

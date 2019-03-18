@@ -14,13 +14,13 @@ class Stack21 {
     }
 
     // wkladanie na stos
-    void push(int item) {
+    public void push(int item) {
     	if (top_of_stack == 9) System.out.println("Stos pelen");
 		else stck[++top_of_stack] = item;
     }
 
     // zdejmowanie ze stosu
-    int pop() {
+    public int pop() {
     	if (top_of_stack < 0) {
     		System.out.println("Stos pusty");
     		return 0;

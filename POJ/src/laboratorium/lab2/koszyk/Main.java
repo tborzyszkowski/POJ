@@ -10,13 +10,15 @@ public class Main {
 		cart.addProduct(new Product("Kartofle", 200))
 		    .addProduct(new Product("Gazeta", 100))
 		    .addPromotion(new ValuePromotion())
+		    .addPromotion(new MugPromotion())
+		    .addPromotion(new MugPromotion())
 		    .applyPromotions();
 
 		System.out.println(cart);
-
-		cart.addPromotion(new MugPromotion())
-		    .applyPromotions();
-
-		System.out.println(cart);
+//
+//		cart.addPromotion(new MugPromotion())
+//		    .applyPromotions();
+//
+//		System.out.println(cart);
 	}
 }
