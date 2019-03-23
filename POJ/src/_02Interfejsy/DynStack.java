@@ -33,6 +33,10 @@ class DynStack implements IntStack {
 		} else
 			return stck[top_of_stack--];
 	}
+
+	public int size() {
+		return stck.length;
+	}
 }
 
 // klasa testujaca
@@ -42,11 +46,16 @@ class IFTest2 {
 		DynStack myStack2 = new DynStack(8);
 
 		// wkladamy liczby na stos
-		for (int i = 0; i < 12; i++)
+		for (int i = 0; i < 12; i++) {
+			System.out.print("Push("+  i + ") " );
 			myStack1.push(i * i);
-		for (int i = 0; i < 20; i++)
+			System.out.println("size = " + myStack1.size() );
+		}
+		for (int i = 0; i < 20; i++) {
+			System.out.print("Push("+  i + ") " );
 			myStack2.push(i + i);
-
+			System.out.println("size = " + myStack2.size() );
+		}
 		// zdejmujemy ze stosow
 		System.out.println("Stos myStack1:");
 		for (int i = 0; i < 12; i++)

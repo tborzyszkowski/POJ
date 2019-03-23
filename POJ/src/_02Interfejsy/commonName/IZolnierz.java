@@ -1,5 +1,5 @@
 package _02Interfejsy.commonName;
 
-public interface Pilkarz {
+public interface IZolnierz {
 	void strzelaj();
 }

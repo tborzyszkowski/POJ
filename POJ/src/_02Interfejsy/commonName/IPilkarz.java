@@ -1,5 +1,5 @@
 package _02Interfejsy.commonName;
 
-public interface Zolnierz {
+public interface IPilkarz {
 	void strzelaj();
 }

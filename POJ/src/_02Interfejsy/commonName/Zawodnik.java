@@ -1,13 +1,13 @@
 package _02Interfejsy.commonName;
 
-public class Zawodnik implements Pilkarz, Zolnierz {
+public class Zawodnik implements IPilkarz, IZolnierz {
 
 	@Override
 	public void strzelaj() {
-		if( this instanceof Pilkarz) {
+		if( this instanceof IPilkarz) {
 			System.out.println("Piłkarz");
 		}
-		if( this instanceof Zolnierz) {
+		if( this instanceof IZolnierz) {
 			System.out.println("Żołnierz");
 		}
 

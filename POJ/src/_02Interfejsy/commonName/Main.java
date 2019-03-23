@@ -3,8 +3,8 @@ package _02Interfejsy.commonName;
 public class Main {
 
 	public static void main(String[] args) {
-		Pilkarz p;
-		Zolnierz z; 
+		IPilkarz p;
+		IZolnierz z; 
 		Zawodnik zaw = new Zawodnik();
 		
 		zaw.strzelaj();
@@ -15,7 +15,7 @@ public class Main {
 		z = zaw;
 		z.strzelaj();
 		
-		((Pilkarz) zaw).strzelaj();
+		((IPilkarz) zaw).strzelaj();
 
 	}
 
