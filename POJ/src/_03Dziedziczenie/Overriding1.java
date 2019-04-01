@@ -2,45 +2,42 @@ package _03Dziedziczenie;
 
 import java.util.*;
 
-// Demonstracja nadpisania metody
 class AO1 {
-    int i, j;
+    int i;
     
-    AO1(int a, int b) {
-    	i = a;
-    	j = b;
+    AO1(int i) {
+    	this.i = i;
     }
-    // wyswietl i oraz j
-    void show() {
-    	System.out.println("A: i = " + i + " j = " + j);
+    String show() {
+    	return "A: i = " + i;
     }
 }
 
 class BO1 extends AO1 {
-    int k;
+    int j;
     
-    BO1(int a, int b, int c) {
-    	super(a, b);
-    	k = c;
+    BO1(int i, int j) {
+    	super(i);
+    	this.j = j;
     }
-    // wyswietl k - metoda ta nadpisuje metode show z A
-    void show() {
-    	System.out.println("B: k = " + k);
+
+    String show() {
+    	return "B: j = " + j;
     }
 }
 // klasa testujaca
 class Overriding1 {
     public static void main (String args[]) {
-    	BO1 obB = new BO1(1, 2, 3);
+    	BO1 obB = new BO1(1, 2);
     	//AO1 obA = obB;
-    	AO1 obA = new AO1(4,5);
+    	AO1 obA = new AO1(4);
 
-    	obB.show(); // wywolanie show() z B
+    	System.out.println(obB.show()); 
     	boolean b = (new Random()).nextBoolean();
 		System.out.println("b = "+ b);
     	if(b){
     		obA = obB;
     	}
-    	obA.show();
+    	System.out.println(obA.show());
     }
 }

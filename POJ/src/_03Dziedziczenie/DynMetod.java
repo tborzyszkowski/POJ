@@ -1,5 +1,7 @@
 package _03Dziedziczenie;
 
+import java.util.Random;
+
 // Przyklad dynamicznego wiazania metod
 
 class A_3 {
@@ -35,6 +37,13 @@ class DynMetod {
 		r.callMe(); // wywolanie wersji C callMe
 
 		r = a; // wskazujemy na obiekt klasy A
+
 		r.callMe(); // wywolanie wersji A callMe
+		
+		if((new Random()).nextBoolean())
+			r = a;
+		else
+			r = c;
+		r.callMe();
 	}
 }

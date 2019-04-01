@@ -1,34 +1,27 @@
 package _03Dziedziczenie;
 
-// Przyklad dziedziczenia ze zmiennymi prywatnymi
-// Zmienne prywatne nie sa dostepne dla klas podrzednych
-
-// Klasa nadrzedna
 class A2 {
 	int i;
 	private int j; // tym razem j jest prywatna
 
-	// ustawianie wartosci
 	void setA(int a, int b) {
 		i = a;
 		j = b;
 	}
 
-	// pokaz zawartosc klasy
-	String zawartoscA() {
-		return ("\ti = " + i + "\tj = " + j);
+	public String toString() {
+		return "\ti = " + i + "\tj = " + j;
 	}
 
-	// suma zawartosci
 	int sumaA() {
 		return i + j;
 	}
 
-	int getJ() {
+	public int getJ() {
 		return 2 * j;
 	}
 
-	void setJ(int a) {
+	public void setJ(int a) {
 		j = 3 * a;
 	}
 }
@@ -41,23 +34,16 @@ class B2 extends A2 {
 	void setB(int a, int b, int c) {
 		setA(a, b);
 //		j = a + b;
-		setJ(a + b);
+//		setJ(a + b);
 		k = c;
 	}
 
-	// pokaz zawartosc klasy
-	String zawartoscB() {
-		return zawartoscA() + "\tk = " + k;
+	public String toString() {
+		return super.toString() + "\tk = " + k;
 	}
 
-	// suma zawartosci
 	int sumaB() {
 		return sumaA() + k;
-	}
-
-	// niepoprawna definicja metody
-	int sumaB2() {
-		return i + getJ() + k;
 	}
 }
 
@@ -69,12 +55,12 @@ class C22 extends B2 {
 		m = d;
 	}
 
-	String zawartoscC() {
-		return zawartoscB() + "\tm = " + m;
+	public String toString() {
+		return super.toString() + "\tm = " + m;
 	}
 
 	int sumaC() {
-		return sumaB2() + m + getJ();
+		return sumaB() + m;
 	}
 }
 
@@ -91,9 +77,9 @@ class Dziedzictwo2 {
 		obC.setA(-10, -100);
 
 		// wypisujemy zawartosc
-		System.out.println("Zawartosc A: " + obA.zawartoscA());
-		System.out.println("Zawartosc B: " + obB.zawartoscB());
-		System.out.println("Zawartosc C: " + obC.zawartoscC());
+		System.out.println("Zawartosc A: " + obA);
+		System.out.println("Zawartosc B: " + obB);
+		System.out.println("Zawartosc C: " + obC);
 
 		// wypisujemy sumy
 		System.out.println("Suma A: " + obA.sumaA());

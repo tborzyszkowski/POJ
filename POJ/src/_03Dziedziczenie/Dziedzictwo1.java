@@ -10,7 +10,7 @@ class A1 {
     	j = b;
     }
     // pokaz zawartosc klasy
-    String zawartoscA() {
+    public String toString() {
     	return "\ti = " + i + "\tj = " +j;
     } 
     // suma zawartosci
@@ -27,8 +27,8 @@ class B1 extends A1 {
     	k = c;
     }
     // pokaz zawartosc klasy
-    String zawartoscB() {
-    	return zawartoscA() + "\tk = " + k;
+    public String toString() {
+    	return super.toString() + "\tk = " + k;
     }
     // suma zawartosci
     int sumaB() {
@@ -46,8 +46,8 @@ class Dziedzictwo1 {
     	obB.setB(1,2,3);
     	obB.setA(-1, -2);
 	// wypisujemy zawartosc
-    	System.out.println("Zawartosc A: " + obA.zawartoscA());
-    	System.out.println("Zawartosc B: " + obB.zawartoscB() + "\n");
+    	System.out.println("Zawartosc A: " + obA);
+    	System.out.println("Zawartosc B: " + obB + "\n");
 	
  	// wypisujemy sumy
     	System.out.println("Suma A: " + obA.sumaA());

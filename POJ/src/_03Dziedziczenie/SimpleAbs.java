@@ -12,7 +12,8 @@ class B_1 extends A_1 {
     	System.out.println("B: callMe");
     }
     void callMeToo() {
-    	System.out.println("B: callMeToo");
+    	super.callMeToo();
+    	//System.out.println("B: callMeToo");
     }
 }
 // klasa testujaca

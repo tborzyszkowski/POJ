@@ -1,8 +1,7 @@
 package _03Dziedziczenie;
 
-// Demonstracja kolejnosci wywolania konstruktorow
 class AK {
-    AK(int i) {
+    AK(int i) { // <- 11
     	//super();
     	int j=5;
     	//super();
@@ -14,21 +13,21 @@ class AK {
     }
 }
 class BK extends AK {
-    BK(int i) {
-    	super(i+1);
+    BK(int i) { // <- 10
+    	super(i+1); // <- 11
     	System.out.println("Konstruktor z B " + i);
     }
     BK(){//super();
     	}
     }
 class CK extends BK {
-    CK(int i) {
+    CK(int i) { // <- 5
     	//super();
-    	super(2 * i);	
+    	//super(2 * i); // <- 10
     	System.out.println("Konstruktor z C " + i);
     }
 }
-// klasa testujaca
+ 
 class KonstrDemo {
     public static void main (String args[]) {
     	new CK(5);

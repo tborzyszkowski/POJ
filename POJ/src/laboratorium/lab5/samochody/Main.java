@@ -18,17 +18,23 @@ public class Main {
 
 //		lista.sort(Comparator.comparing(ogl -> ogl.getSamochod().getRocznik()));
 //		lista.sort(new RocznikComparator());
-		Collections.sort(lista, new RocznikComparator());
-		System.out.println(lista);
-		Collections.sort(lista, new CenaComparator());
-		System.out.println(lista);
-		Collections.sort(lista, 
-				new DoubleCriteriaComparator(new RocznikComparator(), new CenaComparator()) );
-		System.out.println(lista);
 		
+//		Collections.sort(lista, new RocznikComparator());
+//		System.out.println(lista);
+//		
+//		Collections.sort(lista, new CenaComparator());
+//		System.out.println(lista);
+//		
+//		Collections.sort(lista, 
+//				new DoubleCriteriaComparator(new RocznikComparator(), new CenaComparator()) );
+//		System.out.println(lista);
+//		
 		System.out.println("FILTER");
-		lista.stream().filter(ogl -> ogl.getSamochod().getRocznik() > 1990);
-		System.out.println(lista);
+		lista
+			.stream()
+			.filter(ogl -> ogl.getSamochod().getRocznik() > 1990)
+			.forEach(o -> System.out.println(o));
+		//System.out.println(lista);
 		
 	}
 

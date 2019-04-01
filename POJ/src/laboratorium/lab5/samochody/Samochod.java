@@ -12,7 +12,8 @@ public class Samochod {
 		this.rocznik = rocznik;
 		this.przebieg = przebieg;
 	}
-
+	public Samochod() {}
+	
 	public String getMarka() {
 		return marka;
 	}
