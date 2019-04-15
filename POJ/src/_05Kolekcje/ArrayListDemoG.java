@@ -5,7 +5,7 @@ import java.util.*;
 class ArrayListDemoG{
     public static void main(String args[]) {
 
-	ArrayList<String> a1 = new ArrayList<String>();
+	ArrayList<String> a1 = new ArrayList<>();
 
 	System.out.println("Poczatkowy rozmiar a1: " + a1.size() + " " + a1.isEmpty());
 
@@ -22,7 +22,7 @@ class ArrayListDemoG{
 	a1.add(2, "Q");
 	//a1.add(3,new Integer(3));
 	//System.out.println(a1.contains(new Integer(42)));
-	a1.add(10,"EE");
+	//a1.add(10,"EE");
 	System.out.println("Rozmiar po dodaniu   : " + a1.size());
 	System.out.println("Zawartosc a1         : " + a1);
 

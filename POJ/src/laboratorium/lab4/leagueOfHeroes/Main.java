@@ -8,7 +8,7 @@ public class Main {
 		
 		IStat h;
 		
-		h = new Mage("MMMM", 10, 20, 50);
+		h = new Mage("MMMM", 1, 2, 5);
 		
 		System.out.println(h.ShowStats());
 		
@@ -18,6 +18,8 @@ public class Main {
 		hh = mm; 
 		
 		System.out.println(hh.ShowStats());
+		
+		System.out.println(hh);
 	}
 
 }

@@ -1,7 +1,5 @@
 package _05Kolekcje;
 
-// implementacja stosow w oparciu o kolekcje
-// wykorzystanie typow parametrycznych
 import java.util.*;
 
 class Stack33<T> {

@@ -11,7 +11,7 @@ class ArrayListToArray {
 		a1.add(new Integer(2));
 		a1.add(new Integer(3));
 		a1.add(new Integer(4));
-		a1.add("AAAA");
+		//a1.add("AAAA");
 		System.out.println("Zawartosc a1: " + a1);
 
 		Object ia[] = a1.toArray();

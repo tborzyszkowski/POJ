@@ -1,6 +1,5 @@
 package _05Kolekcje;
 
-// implementacja stosow w oparciu o kolekcje
 import java.util.*;
 
 class Stack22 {
@@ -27,6 +26,11 @@ class Stack22 {
 	public boolean isEmpty() {
 		return items.isEmpty();
 	}
+	
+	public int size() {
+		return items.size();
+
+	}
 }
 
 // Klasa testujaca stos
@@ -49,7 +53,7 @@ class Stack_1 {
 			Object o = myStack.pop();
 			if (o instanceof Integer) {
 				System.out.println((Integer) o + 1);
-				//System.out.println(""+o+1);
+				// System.out.println(""+o+1);
 			} else
 				System.out.println("String: " + o);
 		}

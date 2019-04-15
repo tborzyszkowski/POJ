@@ -2,7 +2,7 @@ package _04Pakiety.protection.p1;
 
 public class Protection {
     private   int n_pri = 2;
-    int n_nic = 1; // "nic"
+              int n_nic = 1; // "nic"
     protected int n_pro = 3;
     public    int n_pub = 4;
 
