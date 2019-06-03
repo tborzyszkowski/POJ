@@ -6,7 +6,7 @@ class Exc9b {
 		throw new IllegalAccessException("To tylko test");
 	}
 
-	public static void main(String args[]) //throws IllegalAccessException
+	public static void main(String args[])// throws IllegalAccessException
 	{
 		try {
 			throwOne();

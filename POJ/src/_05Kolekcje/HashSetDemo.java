@@ -5,7 +5,7 @@ import java.util.*;
 class HashSetDemo{
     public static void main(String args[]) {
 
-	HashSet<String> hs = new HashSet<>(100);
+	HashSet<String> hs = new HashSet<>(10);
 	System.out.println(hs.isEmpty());
 	
 	hs.add("AA"); hs.add("HH"); hs.add("O1");

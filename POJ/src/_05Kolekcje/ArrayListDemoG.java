@@ -30,7 +30,7 @@ class ArrayListDemoG{
 	System.out.println("Zawartosc a1(1F)     : " + a1);
 	a1.remove("F");
 	System.out.println("Zawartosc a1 (2F)    : " + a1);
-	a1.remove(2);
+	a1.remove(10);
 
 	System.out.println("Po usunieciu         : " + a1.size());
 	System.out.println("Zawartosc a1         : " + a1);

@@ -32,7 +32,7 @@ public class TestKolekcji {
 		 Collections.sort(listInt);
 		
 		 for(int i =0; i<K; i++) {
-		 Collections.binarySearch(listInt, findMe[i]);
+			 Collections.binarySearch(listInt, findMe[i]);
 		// for(int j = 0; j < N; j++)
 		// if(findMe[i].equals(listInt.get(j)))
 		// continue;

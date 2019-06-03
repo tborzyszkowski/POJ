@@ -13,7 +13,6 @@ class Exc2 {
 			System.out.println("aqq");
 		}
 		// obsługa błędu arytmetycznego (tu dzielenie przez zero)
-
 		catch (ArithmeticException e) {
 			System.out.println("Dzielenie przez zero: " + e);
 		} 

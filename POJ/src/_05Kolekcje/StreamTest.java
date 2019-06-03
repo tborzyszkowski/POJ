@@ -77,5 +77,4 @@ public class StreamTest {
 					.mapToInt(u -> u.age)
 					.average() );
 	}
-
 }

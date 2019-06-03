@@ -41,7 +41,7 @@ class IteratorDemo {
 			System.out.print(element + " ");
 		}
 		System.out.println();
-
+		
 		// wyswietlarnie listy od konca
 		System.out.print("Lista od konca:");
 		while (litr.hasPrevious()) {

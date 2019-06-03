@@ -26,4 +26,4 @@ class Exc4 {
 }
 
 // Skompiluj i uruchom.
-// Jaki b�dzie efekt obs�ugi b��du i jak zachowa si� p�tla?
+// Jaki będzie efekt obsługi błędu i jak zachowa się pętla?

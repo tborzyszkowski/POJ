@@ -15,7 +15,7 @@ class NewThread11 implements Runnable {
 	}
 
 	final double f(double x){
-		return Math.sin(Math.E * x) -1.5;
+		return Math.sin(Math.E * x) - 1.5;
 	}
 	// kod nowego watku
 	public void run() {
@@ -44,10 +44,10 @@ class MultiThreadDemo {
 		new NewThread11("Drugi   ");
 		new NewThread11("Trzeci  ");
 		new NewThread11("Czwarty ");
-		new NewThread11("Piaty   ");
-		new NewThread11("---6--- ");
-		new NewThread11("---7--- ");
-		new NewThread11("---8--- ");
+//		new NewThread11("Piaty   ");
+//		new NewThread11("---6--- ");
+//		new NewThread11("---7--- ");
+//		new NewThread11("---8--- ");
 
 		try { // czekaj na zakonczenie wszystkich watkow
 			Thread.sleep(1000);

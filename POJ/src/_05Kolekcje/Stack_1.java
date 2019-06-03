@@ -49,7 +49,7 @@ class Stack_1 {
 
 		// zdejmujemy ze stosu
 		System.out.println("Stos myStack:");
-		for (int i = 0; i < 16; i++) {
+		for (int i = 0; i < myStack.size(); i++) {
 			Object o = myStack.pop();
 			if (o instanceof Integer) {
 				System.out.println((Integer) o + 1);

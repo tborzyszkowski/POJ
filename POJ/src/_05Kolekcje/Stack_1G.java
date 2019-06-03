@@ -43,7 +43,7 @@ class Stack_1G {
 
 		// TU otrzymamy blad
 		 myStack.push(new Long(5));
-		// myStack.push("Ala ma kota");
+//		 myStack.push("Ala ma kota");
 		
 		System.out.println("Czy stos jest pusty? : " + myStack.isEmpty());
 

@@ -9,7 +9,7 @@ class Exc8 {
 			System.out.println("Wyjątek wewnętrz metody: " + e);
 			e.printStackTrace();
 			throw e; 
-			//throw new ArithmeticException();
+//			throw new ArithmeticException();
 		} /*catch (ArithmeticException e) {
 			System.out.println("Dzielenie przez 0 (v1): " + e);
 			e.printStackTrace();

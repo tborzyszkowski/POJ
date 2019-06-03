@@ -32,7 +32,7 @@ class JoinThreadDemo {
 	public static void main(String args[]) {
 		NewThread3 ob1 = new NewThread3("Pierwszy", 4);
 		NewThread3 ob2 = new NewThread3("Drugi   ", 5);
-		NewThread3 ob3 = new NewThread3("Trzeci  ", 3);
+		NewThread3 ob3 = new NewThread3("Trzeci  ", 6);
 		NewThread3 ob4 = new NewThread3("Czwarty ", 6);
 
 		System.out
