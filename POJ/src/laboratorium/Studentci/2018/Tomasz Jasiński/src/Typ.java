@@ -1,4 +1,0 @@
-public enum Typ {
-
-    MARGHARITA, PROSCIUTTO, DIAVOLA, SALAMI, SCAMPI, VEGE
-}

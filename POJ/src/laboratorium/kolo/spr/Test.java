@@ -1,2 +1,0 @@
-package laboratorium.kolo.spr;
-
