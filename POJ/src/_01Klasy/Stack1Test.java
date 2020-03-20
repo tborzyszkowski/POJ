@@ -8,7 +8,7 @@ public class Stack1Test {
 	
 	@Test
 	public void testPush() {
-		Stack1 testStack = new Stack1();
+		StackWithoutEncapsulation testStack = new StackWithoutEncapsulation();
 		
 		// fail("Not yet implemented");
 	}

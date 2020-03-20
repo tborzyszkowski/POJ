@@ -1,55 +1,47 @@
 package _01Klasy;
 
-// implementacja stosow w oparciu o tablice
+class StackWithoutEncapsulation {
+	final int STACK_LIMIT = 10;
+	int stackData[] = new int[STACK_LIMIT];
+	int topOfStack;
 
-class Stack1 { // kolejka LIFO
-	int stck[] = new int[10];
-	int top_of_stack;
-
-	// inicjalizacja wierzcholka stosu
-	Stack1() {
-		top_of_stack = -1;
+	StackWithoutEncapsulation() {
+		topOfStack = -1;
 	}
 
-	// wkladanie na stos
 	void push(int item) {
-		if (top_of_stack == 9)
+		if (topOfStack == STACK_LIMIT - 1)
 			System.out.println("Stos pelen");
 		else
-			stck[++top_of_stack] = item;
+			stackData[++topOfStack] = item;
 	}
 
-	// zdejmowanie ze stosu
 	int pop() {
-		if (top_of_stack < 0) {
+		if (topOfStack < 0) {
 			System.out.println("Stos pusty");
 			return 0;
 		} else
-			return stck[top_of_stack--];
+			return stackData[topOfStack--];
 	}
 }
 
-// Klasa testujaca stos
-
 class StackTest1 {
 	public static void main(String args[]) {
-		Stack1 myStack1 = new Stack1();
-		Stack1 myStack2 = new Stack1();
+		StackWithoutEncapsulation firstStack = new StackWithoutEncapsulation();
+		StackWithoutEncapsulation secondStack = new StackWithoutEncapsulation();
 
-		// wkladamy liczby na stos
 		for (int i = 0; i < 10; i++)
-			myStack1.push(i);
+			firstStack.push(i);
 		for (int i = 0; i < 20; i++)
-			myStack2.push(i);
+			secondStack.push(i);
 
-		myStack1.stck[2] = 117;
+		firstStack.stackData[2] = 117;
 
-		// zdejmujemy ze stosow
-		System.out.println("Stos myStack1:");
+		System.out.println("Stos firstStack:");
 		for (int i = 0; i < 10; i++)
-			System.out.println(myStack1.pop());
-		System.out.println("Stos myStack2:");
+			System.out.println(firstStack.pop());
+		System.out.println("Stos secondStack:");
 		for (int i = 0; i < 10; i++)
-			System.out.println(myStack2.pop());
+			System.out.println(secondStack.pop());
 	}
 }

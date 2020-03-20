@@ -1,33 +1,27 @@
 package _01Klasy;
 
-// Przyklad roznic miedzy elementami public i private
 class Access {
-	int a; // dostep domyslny
-	public int b; // dostep dla wszystkich
-	private int c; // dostep tylko dla klasy
+	int a;
+	public int b;
+	private int c;
 
-	// metody dostepu do c
-	public void setC(int i) { // ustaw c
+	public void setC(int i) {
 		c = i * 2;
 	}
-	protected int getC() { // pobierz c
+	protected int getC() {
 		return c * 2;
 	}
 }
 
-// Klasa testujaca
 class AccessDemo {
 	public static void main(String args[]) {
 		Access ob = new Access();
 
-		// OK, a i b moga byc wykorzystywane bezposrednio
 		ob.a = 10;
 		ob.b = 20;
 
-		// Natomiast tu bedzie blad
 		// ob.c = 100;
 		// ob.d = 11;
-		// Do c mamy dostep tylko za pomoca metod
 		ob.setC(100);
 		System.out
 				.println("a = " + ob.a + " b = " + ob.b + " c = " + ob.getC());
