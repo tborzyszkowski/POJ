@@ -7,7 +7,7 @@ class TwoDAgain{
 	int twoD[][] = new int[4][];
         // alokacja wierszy
 
-	for(int i=0;i<twoD.length; i++){
+	for(int i = 0; i<twoD.length; i++){
 		twoD[i] = new int[i+1];
 	}
 /*	twoD[0] = new int[1];

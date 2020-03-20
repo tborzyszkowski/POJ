@@ -1,8 +1,5 @@
 package _01Klasy;
 
-// Przyklad przekazywania obiektow jako parametrow 
-// i oddawania ich jako wartosci metod
-
 class PassOb {
 	int a, b;
 	PassOb(int i, int j) {
@@ -13,6 +10,7 @@ class PassOb {
 		a = o.a;
 		b = o.b;
 	}
+
 	boolean equals(PassOb o) {
 		if (o.a == this.a && o.b == b)
 			return true;

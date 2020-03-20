@@ -9,7 +9,7 @@ class Box3 {
 
 	// konstruktor bez parametrow
 	Box3() {
-		this.setDim(0, 0, 0); // DRY
+		this.setDim(0, 0, 0); // DRY -> SOLID
 	}
 
 	// konstruktor z jednym parametrem
@@ -20,8 +20,8 @@ class Box3 {
 
 	// konstruktor z parametrami
 	Box3(int w, int h, int d) {
-		this(2.0 * w, 3 * h, 4 * d);
-//		this.setDim(2 * w, 3 * h, 4 * d); // DRY
+//		this(2.0 * w, 3 * h, 4 * d);
+		this.setDim(2 * w, 3 * h, 4 * d); // DRY
 	}
 
 	// konstruktor z parametrami
@@ -40,16 +40,16 @@ class Box3 {
 	// metoda zmieniajaca zawartosc obiektu
 	// ale nie bedaca konstruktorem
 	// nic nie zwraca, wiec typ wynikowy to void
-	void setDim(double w, double h, double d) {
-		width = w;
-		height = h;
-		depth = d;
+	void setDim(double width, double height, double depth) {
+		this.width = width;
+		this.height = height;
+		this.depth = depth;
 	}
 
 	// metoda obliczajaca objetosc
 	double volume() {
 		// tu metoda oddaje obietosc
-		return width * height * depth;
+		return this.width * this.height * this.depth;
 	}
 }
 

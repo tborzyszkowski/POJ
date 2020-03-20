@@ -1,55 +1,47 @@
 package _01Klasy;
 
-// Przyklad przekazywania  parametrow przez wartosc i zmienna 
-
 class CallBy {
 	int a, b;
-	// konstruktor
 	CallBy(int i, int j) {
 		a = i;
 		b = j;
 	}
-	// metoda wywolujaca przez wartosc
-	void ByValue(int i, int j) {
+	void byValue(int i, int j) {
 		i *= 2; // i = 2 * i
 		j /= 2;
 		System.out.println("Wewn: i = " + i + " j = " + j + "\n");
 	}
-	void ByInteger(Integer i, Integer j) {
+	void byInteger(Integer i, Integer j) {
 		i *= 2; // i = 2 * i
 		j /= 2;
 		System.out.println("Wewn: i = " + i + " j = " + j + "\n");
 	}
-	// metoda wywolujaca przez zmienna
-	void ByRef(CallBy o) {
+	void byRef(CallBy o) {
 		o.a *= 2;
 		o.b /= 2;
 		System.out.println("Wewn: a = " + o.a + " b = " + o.b + "\n");
 	}
 }
-// Klasa testujaca
+
 public class CallByDemo {
 	public static void main(String args[]) {
 		CallBy ob = new CallBy(15, 20);
 		int i = 5;
 		int j = 10;
 
-		// wartosc przed wywolaniem
 		System.out.println(" i = " + i + " j = " + j);
-		ob.ByValue(i, j);
+		ob.byValue(i, j);
 		System.out.println(" i = " + i + " j = " + j + "\n");
 
 		System.out.println(" a = " + ob.a + " b = " + ob.b);
-		ob.ByRef(ob);
+		ob.byRef(ob);
 		System.out.println(" a = " + ob.a + " b = " + ob.b + "\n");
 		
 		System.out.println(" i = " + i + " j = " + j);
 		Integer ii = new Integer(i);
 		Integer jj = new Integer(j);
-		ob.ByInteger(ii, jj);
+		ob.byInteger(ii, jj);
 		System.out.println(" i = " + i + " j = " + j + "\n");
 		System.out.println(" ii= " + ii+ " jj= " + jj+ "\n");
 	}
 }
-
-// Integer ii = new Integer(i);

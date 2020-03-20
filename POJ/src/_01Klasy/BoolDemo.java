@@ -9,7 +9,7 @@ class BoolDemo {
 		System.out.println("b = " + b);
 		b = true;
 		System.out.println("b = " + b);
-		System.out.println("1+1 = " + (1 + 1));
+		System.out.println("1+1 = " + 1 + 1);
 
 		// wyrazenia typu boolean kontroluja wykonanie komendy if
 		if (b)
