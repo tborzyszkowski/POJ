@@ -4,23 +4,23 @@ class StackWithoutLimits {
 	private int stackData[];
 	private int topOfStack;
 
-	StackWithoutLimits(int sizeOfStack) {
+	public StackWithoutLimits(int sizeOfStack) {
 		stackData = new int[sizeOfStack];
 		topOfStack = -1;
 	}
 
-	int size() {
+	public int size() {
 		return stackData.length;
 	}
 
-	void push(int item) {
+	public void push(int item) {
 		if (topOfStack == stackData.length - 1)
 			System.out.println("Stos pelen");
 		else
 			stackData[++topOfStack] = item;
 	}
 
-	int pop() {
+	public int pop() {
 		if (topOfStack < 0) {
 			System.out.println("Stos pusty");
 			return 0;

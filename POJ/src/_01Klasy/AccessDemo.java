@@ -1,29 +1,29 @@
 package _01Klasy;
 
 class Access {
-	int a;
-	public int b;
-	private int c;
+	int samplePackageField;
+	public int samplePublicField;
+	private int samplePrivateField;
 
-	public void setC(int i) {
-		c = i * 2;
+	public void setSamplePrivateField(int value) {
+		samplePrivateField = value * 2;
 	}
-	protected int getC() {
-		return c * 2;
+	protected int getSamplePrivateField() {
+		return samplePrivateField * 2;
 	}
 }
 
 class AccessDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Access ob = new Access();
 
-		ob.a = 10;
-		ob.b = 20;
+		ob.samplePackageField = 10;
+		ob.samplePublicField = 20;
 
-		// ob.c = 100;
-		// ob.d = 11;
-		ob.setC(100);
+//		ob.samplePrivateField = 100;
+//		ob.sampleMissingField = 11;
+		ob.setSamplePrivateField(100);
 		System.out
-				.println("a = " + ob.a + " b = " + ob.b + " c = " + ob.getC());
+				.println("a = " + ob.samplePackageField + " b = " + ob.samplePublicField + " c = " + ob.getSamplePrivateField());
 	}
 }

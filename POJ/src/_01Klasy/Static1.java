@@ -19,7 +19,7 @@ class Static1 {
 		b = b * 4;
 	}
 
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		pisz(1234);
 		test(new Integer(3));
 		test(3);

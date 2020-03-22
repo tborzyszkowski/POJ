@@ -2,21 +2,19 @@ package _01Klasy;
 
 class Static21 {
 	static int a = 10;
-	static int b = 20;
 	int c = 30;
 
 	static void callMe() {
 		System.out.println("a = " + a);
-		System.out.println("b = " + b);
 //		System.out.println("c = " + c);
 	}
 }
 
 class Static2 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Static21.callMe();
-		System.out.println("b = " + Static21.b);
-		// System.out.println("c = " + Static21.c);
+		System.out.println("a = " + Static21.a);
+//		System.out.println("c = " + Static21.c);
 
 		Static21 ob1 = new Static21();
 		Static21 ob2 = new Static21();

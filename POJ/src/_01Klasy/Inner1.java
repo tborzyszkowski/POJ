@@ -10,7 +10,7 @@ class Outer1 {
 		inner.display();
 		this.inner.x = 3;
 		System.out.println("this.inner.x = " + this.inner.x + " inner.x = " + inner.x);
-		//Inner1.x = 11;
+//		Inner1.x = 11;
 	}
 	void printInner() {
 		System.out.println("x = " + inner.x);

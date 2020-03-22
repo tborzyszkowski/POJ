@@ -4,7 +4,7 @@ class FinalAlongClass{
 	final int STALA = 5;
 	
 //	FinalAlongClass(int val){
-//		this.STALA = val;
+//		STALA = val;
 //	}
 }
 
@@ -24,7 +24,7 @@ class FinalAlongObject{
 
 
 public class FinalAlongClassTest {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		FinalAlongClass fac1 = new FinalAlongClass();
 		FinalAlongClass fac2 = new FinalAlongClass();
 		
