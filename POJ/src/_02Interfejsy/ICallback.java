@@ -15,7 +15,7 @@ class Client implements ICallback {
 	}
 }
 class TestIface {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		ICallback c = new Client();
 
 		c.callback(42);
@@ -31,7 +31,7 @@ class AnotherClient implements ICallback {
 }
 
 class TestIface2 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		ICallback c;
 		Client ob1 = new Client();
 		AnotherClient ob2 = new AnotherClient();

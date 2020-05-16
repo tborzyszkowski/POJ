@@ -6,7 +6,6 @@ class SamePackage {
 		Protection p = new Protection();
 
 		System.out.println("konstruktor tego samego pakietu");
-		// dostepne tylko dla klasy
 //		System.out.println("n_pri = " + p.n_pri);
 		System.out.println("n_nic = " + p.n_nic);
 		System.out.println("n_pro = " + p.n_pro);

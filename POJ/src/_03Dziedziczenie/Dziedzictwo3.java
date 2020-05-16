@@ -52,12 +52,10 @@ class Dziedzictwo3 {
 		B0031 obB1 = new B0031();
 		B0032 obB2 = new B0032();
 
-		// ustawiamy wartosci
 		obA0.setA(10);
 		obB1.setB(1, 2);
 		obB2.setB(-1, -2);
 
-		// wypisujemy zawartosc
 		System.out.println("Zawartosc A:  " + obA0);
 		System.out.println("Zawartosc B1: " + obB1);
 		System.out.println("Zawartosc B2: " + obB2);
@@ -72,23 +70,13 @@ class Dziedzictwo3 {
 //		 obB = obA;
 		
 		System.out.println("Zawartosc A:  " + obA0);
-
-//		 System.out.println(" j = " + obA0.j );
-
-//		 System.out.println(" j = " + ((B0031)obA0).j);
-		 
 		System.out.println(obA0.getClass());
-		
+//		System.out.println("B0031: j = " + ((B0031) obA0).j);
 		if (obA0 instanceof B0031)
 			System.out.println("B0031: j = " + ((B0031) obA0).j);
 		else if (obA0 instanceof B0032)
 			System.out.println("B0032: j = " + ((B0032) obA0).j);
 		else
 			System.out.println("Zly typ");
-
-		// if(obA0.getClass().equals(obB1.getClass())) {
-		//
-		// }
-
 	}
 }

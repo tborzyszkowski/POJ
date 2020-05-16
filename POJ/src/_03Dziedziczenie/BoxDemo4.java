@@ -48,7 +48,7 @@ class BoxWeight extends Box4 {
 	private double weight;
 
 	BoxWeight(BoxWeight ob) {
-		super(ob); // tu odwolujemy sie do konstruktora Box(Box ob)
+		super(ob);
 		weight = ob.weight;
 	}
 
@@ -57,8 +57,8 @@ class BoxWeight extends Box4 {
 	}
 
 	BoxWeight(int n, double m) {
-		super(n); // tu wysulamy tylko jeden parametr
-		weight = m; // a tu uzywamy drugiego
+		super(n);
+		weight = m;
 	}
 
 	BoxWeight(double w, int h, int d, double m) {

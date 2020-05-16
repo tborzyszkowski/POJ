@@ -15,7 +15,6 @@ class Question implements SharedConstants {
 	Random rand = new Random();
 
 	int ask() {
-		// liczby z zakresu 0.0 do 1.0
 		int prob = (int) (100 * rand.nextDouble());
 		if (prob < 30)
 			return NO; // 30 %
@@ -29,7 +28,6 @@ class Question implements SharedConstants {
 			return SOON; // 13%
 		else
 			return NEVER; // 2%
-		
 	}
 }
 
@@ -62,8 +60,9 @@ class AskMe implements SharedConstants {
 	public static void main(String args[]) {
 		Question q = new Question();
 		int wyniki[] = {0, 0, 0, 0, 0, 0};
-		int n = 200 * 1000 * 1000;	
+		int n = 20; //* 1000 * 1000;
 		long time1 = System.currentTimeMillis();
+
 		for(int i = 0; i < n; i++){
 			wyniki[q.ask()]++;
 		}
@@ -76,7 +75,7 @@ class AskMe implements SharedConstants {
 		}
 		System.out.println();
 		for(int i = 0; i<wyniki.length; i++){
-			System.out.print(((100.0 *wyniki[i]) / n) + "\t" );
+			System.out.print(((100.0 * wyniki[i]) / n) + "\t" );
 		}
 		System.out.println();
 		System.out.println( "30\t\t30\t\t10\t\t15\t\t13\t\t2" );

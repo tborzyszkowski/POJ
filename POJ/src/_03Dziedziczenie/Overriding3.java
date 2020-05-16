@@ -1,7 +1,5 @@
 package _03Dziedziczenie;
 
-// Demonstracja nadpisania metody
-
 class AO3 {
 	int i, j;
 
@@ -9,8 +7,6 @@ class AO3 {
 		i = a;
 		j = b;
 	}
-
-	// wyswietl i oraz j
 	void show() {
 		System.out.println(" i = " + i + " j = " + j);
 	}
@@ -24,20 +20,18 @@ class BO3 extends AO3 {
 		k = c;
 	}
 
-	// wyswietl k - metoda ta nadpisuje metode show z A
 	void show(String msg) {
 		System.out.println(msg + k);
 	}
 }
 
-// klasa testujaca
 class Overriding3 {
 	public static void main(String args[]) {
 		BO3 obB = new BO3(1, 2, 3);
 		AO3 obA = obB;
 
-		obB.show(); // wywolanie show() z A
-		obB.show("To jest k: "); // wywolanie show() z B
+		obB.show();
+		obB.show("To jest k: ");
 		obA.show();
 //		obA.show("aaa");
 	}

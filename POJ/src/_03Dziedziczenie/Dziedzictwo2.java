@@ -2,7 +2,7 @@ package _03Dziedziczenie;
 
 class A2 {
 	int i;
-	private int j; // tym razem j jest prywatna
+	private int j;
 
 	void setA(int a, int b) {
 		i = a;
@@ -26,11 +26,9 @@ class A2 {
 	}
 }
 
-// Klasa podrzedna
 class B2 extends A2 {
 	private int k;
 
-	// ustawianie wartosci
 	void setB(int a, int b, int c) {
 		setA(a, b);
 //		j = a + b;
@@ -70,18 +68,15 @@ class Dziedzictwo2 {
 		B2 obB = new B2();
 		C22 obC = new C22();
 
-		// ustawiamy wartosci
 		obA.setA(10, 20);
 		obB.setB(1, 2, 3);
 		obC.setC(-1, -2, -3, -4);
 		obC.setA(-10, -100);
 
-		// wypisujemy zawartosc
 		System.out.println("Zawartosc A: " + obA);
 		System.out.println("Zawartosc B: " + obB);
 		System.out.println("Zawartosc C: " + obC);
 
-		// wypisujemy sumy
 		System.out.println("Suma A: " + obA.sumaA());
 		System.out.println("Suma B: " + obB.sumaB());
 		System.out.println("Suma C: " + obC.sumaC());

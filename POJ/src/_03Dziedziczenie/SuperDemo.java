@@ -8,12 +8,12 @@ class A {
 }
 
 class B extends A {
-	public int x = 6; // to i przykrywa i z klasy A
+	public int x = 6;
 
 	B(int a, int b) {// super();
 		//i = 1;
-		super(a);
-//		super.x = a+1; // odwolania do i w A
+//		super(a);
+//		super.x = a+1;
 		this.x = b;
 	}
 
