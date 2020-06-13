@@ -1,6 +1,6 @@
 package _05Kolekcje;
 
-import java.util.*;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.ListIterator;
 
@@ -41,7 +41,7 @@ class IteratorDemo {
 			System.out.print(element + " ");
 		}
 		System.out.println();
-		
+
 		// wyswietlarnie listy od konca
 		System.out.print("Lista od konca:");
 		while (litr.hasPrevious()) {

@@ -4,7 +4,6 @@ import java.util.*;
 import java.util.Set;
 import java.util.Iterator;
 
-// TU definiujemy nowy Comparator
 class TComp<E> implements Comparator<E> {
 	public int compare(E a, E b) {
 		int i, j, k;
@@ -12,14 +11,11 @@ class TComp<E> implements Comparator<E> {
 		String aStr = a.toString();
 		String bStr = b.toString();
 
-		// znajdz indeks poczatku nazwiska
 		i = aStr.lastIndexOf(' ');
 		j = bStr.lastIndexOf(' ');
 
-		// czy nazwiska sie zgadzaja
 		k = aStr.substring(i).compareTo(bStr.substring(j));
 		if (k == 0)
-			// nazwiska sie zgadzaja, sprawdz calosc
 			return aStr.compareTo(bStr);
 		else
 			return k;

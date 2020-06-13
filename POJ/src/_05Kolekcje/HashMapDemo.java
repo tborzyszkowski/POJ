@@ -1,8 +1,9 @@
 package _05Kolekcje;
 
-import java.util.*;
-import java.util.Set;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 class HashMapDemo {
 	public static void main(String args[]) {
@@ -29,10 +30,10 @@ class HashMapDemo {
 		double balance = hm.get("Jan Kowalski").doubleValue();
 		Double res = hm.put("Jan Kowalski", new Double(balance + 1000));
 		System.out.println("---> Jan Kowalski: " + res);
-		
+
 		// wyswietlanie tradycyjne
 		for (Iterator<Map.Entry<String, Double>> i = set.iterator(); i
-				.hasNext();) {
+				.hasNext(); ) {
 			Map.Entry<String, Double> me = i.next();
 			System.out.print(me.getKey() + ": ");
 			System.out.println(me.getValue());

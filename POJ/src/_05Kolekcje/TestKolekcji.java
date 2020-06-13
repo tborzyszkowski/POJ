@@ -1,7 +1,6 @@
 package _05Kolekcje;
 
 import java.util.*;
-import java.util.Random;
 
 public class TestKolekcji {
 	public static void main(String[] args) {
@@ -21,24 +20,24 @@ public class TestKolekcji {
 		///////////////////////////////////////
 		// Lista
 		//
-		 for(int i = 0; i < N; i++)
-		 listInt.add(rand.nextInt(1000000));
-		
-		 time2 = System.currentTimeMillis();
-		 System.out.println("List add time("+ N +") = "+ (time2 - time1));
-		
-		 time1 = System.currentTimeMillis();
-		
-		 Collections.sort(listInt);
-		
-		 for(int i =0; i<K; i++) {
-			 Collections.binarySearch(listInt, findMe[i]);
-		// for(int j = 0; j < N; j++)
-		// if(findMe[i].equals(listInt.get(j)))
-		// continue;
-		 }
-		 time2 = System.currentTimeMillis();
-		 System.out.println("List find time("+ N +") = "+ (time2 - time1));
+		for (int i = 0; i < N; i++)
+			listInt.add(rand.nextInt(1000000));
+
+		time2 = System.currentTimeMillis();
+		System.out.println("List add time(" + N + ") = " + (time2 - time1));
+
+		time1 = System.currentTimeMillis();
+
+		Collections.sort(listInt);
+
+		for (int i = 0; i < K; i++) {
+			Collections.binarySearch(listInt, findMe[i]);
+			// for(int j = 0; j < N; j++)
+			// if(findMe[i].equals(listInt.get(j)))
+			// continue;
+		}
+		time2 = System.currentTimeMillis();
+		System.out.println("List find time(" + N + ") = " + (time2 - time1));
 		//
 		///////////////////////////////////////
 		// HashTable

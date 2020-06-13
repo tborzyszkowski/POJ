@@ -1,7 +1,6 @@
 package _05Kolekcje;
 
-import java.util.*;
-import java.util.stream.*;
+import java.util.ArrayList;
 
 class ArrayListToArrayG {
 	public static void main(String args[]) {
@@ -16,8 +15,8 @@ class ArrayListToArrayG {
 
 		System.out.println("Zawartosc a1: " + a1);
 
-		Integer ia[] = { new Integer(0), new Integer(0), new Integer(0),
-				new Integer(0) };
+		Integer ia[] = {new Integer(0), new Integer(0), new Integer(0),
+				new Integer(0)};
 		ia = a1.toArray(ia);
 
 		int sum = 0;

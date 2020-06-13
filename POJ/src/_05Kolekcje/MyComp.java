@@ -1,19 +1,19 @@
 package _05Kolekcje;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.TreeSet;
 
-// TU definiujemy nowy Comparator
-class MyCompDef<E extends Comparable<E> > implements Comparator<E> {
+class MyCompDef<E extends Comparable<E>> implements Comparator<E> {
 	public int compare(E a, E b) {
-		// odwracamy porzadek
-		return b.compareTo(a);
-//		return a.compareTo(b);
+//		return b.compareTo(a);
+		return a.compareTo(b);
 	}
 }
 
 class MyComp {
 	public static void main(String args[]) {
-		// tworzymy obiekt klasy TreeSet z nowym porzadkiem
 		TreeSet<String> ts = new TreeSet<String>(new MyCompDef<>());
 
 		ts.add("A");
@@ -49,9 +49,9 @@ class MyComp {
 
 		System.out.println();
 //		System.out.println(ts);
-		
+
 		TreeSet<Integer> integer = new TreeSet<Integer>(new MyCompDef<>());
-		
+
 		integer.add(10);
 		integer.add(9);
 		integer.add(15);
@@ -64,14 +64,14 @@ class MyComp {
 		integer.add(10);
 		integer.add(100);
 		integer.add(-5);
-		
-		for(Integer i : integer)
+
+		for (Integer i : integer)
 			System.out.print(i + " ");
-		
+
 		System.out.println();
-		
+
 		ArrayList<Integer> ii = new ArrayList<Integer>();
-		
+
 		ii.add(10);
 		ii.add(9);
 		ii.add(15);
@@ -84,12 +84,12 @@ class MyComp {
 		ii.add(10);
 		ii.add(100);
 		ii.add(-5);
-		
+
 		Collections.sort(ii, new MyCompDef<>());
-		
-		for(Integer i : ii)
+
+		for (Integer i : ii)
 			System.out.print(i + " ");
-		
-		
+
+
 	}
 }
