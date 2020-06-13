@@ -3,7 +3,6 @@ package _06Wyjatki;
 
 class Exc2 {
 	public static void main(String args[]) {
-		// początek testowanego bloku
 		try {
 			int d = 0;
 //			int a = 42 / d; // tu powinien być błąd
@@ -12,7 +11,6 @@ class Exc2 {
 					+ "|| " + Double.isNaN(a) + "||"+ a + "||" + (int)a);
 			System.out.println("aqq");
 		}
-		// obsługa błędu arytmetycznego (tu dzielenie przez zero)
 		catch (ArithmeticException e) {
 			System.out.println("Dzielenie przez zero: " + e);
 		} 

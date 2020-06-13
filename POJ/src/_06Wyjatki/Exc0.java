@@ -8,6 +8,3 @@ class Exc0 {
 		System.out.print(a);
 	}
 }
-
-// Skompiluj i uruchom.
-// Jakie informacje otrzymujemy wraz z błędem?

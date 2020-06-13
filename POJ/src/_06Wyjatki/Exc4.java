@@ -24,6 +24,3 @@ class Exc4 {
 		System.out.println("j = "+ j);
 	}
 }
-
-// Skompiluj i uruchom.
-// Jaki będzie efekt obsługi błędu i jak zachowa się pętla?
