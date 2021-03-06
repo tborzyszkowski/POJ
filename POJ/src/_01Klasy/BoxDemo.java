@@ -11,7 +11,7 @@ class Box {
 // definicja klasy demonstrujacej uzycie klasy Box
 
 class BoxDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		// utworzenie instancji klasy Box
 		// od tego czasu zmienna myBox reprezentuje instancje klasy Box
 		Box myBox = new Box();

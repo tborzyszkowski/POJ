@@ -2,7 +2,7 @@ package _01Klasy;
 
 // demonstracja typu boolean
 class BoolDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		boolean b;
 
 		b = false;

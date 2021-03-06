@@ -1,76 +1,112 @@
 package _01Klasy;
 
-// Definicja prostej klasy z metodami i konstruktorami
-
 class Box3 {
-	double width;
-	double height;
-	double depth;
+	private double width = 0;
+	private double height = 0;
+	private double depth = 0;
 
-	// konstruktor bez parametrow
-	Box3() {
-		this.setDim(0, 0, 0); // DRY -> SOLID
+	public Box3(double width, double height, double depth) {
+		this.setDim(3 * width, height, depth);
 	}
 
-	// konstruktor z jednym parametrem
-	Box3(int n) {
+	public Box3() {
+		this(0, 0, 0);
+	}
+
+	public Box3(int n) {
 		this(n, n, n);
-		// this.setDim(n, n, n); // DRY
 	}
 
-	// konstruktor z parametrami
-	Box3(int w, int h, int d) {
-//		this(2.0 * w, 3 * h, 4 * d);
-		this.setDim(2 * w, 3 * h, 4 * d); // DRY
+	public Box3(int width, int height, int depth) {
+		this(2.0 * width, height, depth);
 	}
 
-	// konstruktor z parametrami
-	Box3(double width, double height, double depth) {
-		this.setDim(width, height, depth);
+	public Box3(int width, double height, double depth) {
+		this(4.0 * width, height, depth);
 	}
 
-	Box3(int w, double h, double d) {
-		this.setDim(w, h, d);
+	public Box3(int width, int height, double depth) {
+		this(5.0 * width, height, depth);
 	}
 
-	Box3(double w, int h, double d) {
-		this.setDim(-w, -h, -d);
-	}
-
-	// metoda zmieniajaca zawartosc obiektu
-	// ale nie bedaca konstruktorem
-	// nic nie zwraca, wiec typ wynikowy to void
-	void setDim(double width, double height, double depth) {
+	public void setDim(double width, double height, double depth) {
 		this.width = width;
 		this.height = height;
 		this.depth = depth;
 	}
 
-	// metoda obliczajaca objetosc
-	double volume() {
-		// tu metoda oddaje obietosc
-		return this.width * this.height * this.depth;
+	public double getWidth() {
+		return width;
+	}
+
+	public void setWidth(double width) {
+		this.width = width;
+	}
+
+	public double getHeight() {
+		return height;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
+
+	public double getDepth() {
+		return depth;
+	}
+
+	public void setDepth(double depth) {
+		this.depth = depth;
+	}
+
+	public double volume(){
+		return height * width * depth;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof Box3)) return false;
+
+		Box3 box = (Box3) o;
+
+		if (Double.compare(box.width, width) != 0) return false;
+		if (Double.compare(box.height, height) != 0) return false;
+		return Double.compare(box.depth, depth) == 0;
+	}
+
+	@Override
+	public int hashCode() {
+		int result;
+		long temp;
+		temp = Double.doubleToLongBits(width);
+		result = (int) (temp ^ (temp >>> 32));
+		temp = Double.doubleToLongBits(height);
+		result = 31 * result + (int) (temp ^ (temp >>> 32));
+		temp = Double.doubleToLongBits(depth);
+		result = 31 * result + (int) (temp ^ (temp >>> 32));
+		return result;
 	}
 }
 
-// definicja klasy demonstrujacej uzycie klasy Box
 class BoxDemo3 {
 	public static void main(String args[]) {
-		// utworzenie instancji klasy Box
 		Box3 myBox1 = new Box3();
 		Box3 myBox2 = new Box3(2);
 		Box3 myBox3 = new Box3(3, 4, 5);
 		Box3 myBox4 = new Box3(1.0, 1.0, 1.0);
 
-		// wypisujemy objetosci
 		System.out.println("\nObjetosc myBox1 = " + myBox1.volume());
 		System.out.println("Objetosc myBox2 = " + myBox2.volume());
 		System.out.println("Objetosc myBox3 = " + myBox3.volume());
 		System.out.println("Objetosc myBox4 = " + myBox4.volume());
 
-		// zmieniamy zawartosc obiektu myBox1
 		myBox1.setDim(2, 3, 2);
-		// raz jeszcze jego objetosc
 		System.out.println("\nObjetosc myBox1 = " + myBox1.volume() + "\n");
+		System.out.println(myBox1.equals(myBox2));
+		System.out.println(myBox1.equals(myBox1));
+
+		myBox2.setDim(myBox1.getWidth(), myBox1.getHeight(), myBox1.getDepth());
+		System.out.println(myBox1.equals(myBox2));
 	}
 }
