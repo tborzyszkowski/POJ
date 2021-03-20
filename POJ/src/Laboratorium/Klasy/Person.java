@@ -13,6 +13,12 @@ public class Person {
 		this.yearOfBirth = yearOfBirth;
 	}
 
+	public Person(Person person) {
+		this.fstName = person.fstName;
+		this.sndName = person.sndName;
+		this.yearOfBirth = person.yearOfBirth;
+	}
+
 	public String getFstName() {
 		return fstName;
 	}

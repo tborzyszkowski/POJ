@@ -19,5 +19,15 @@ public class PersonMain {
 		System.out.println( (personTwo.getAge() > personOne.getAge() ? "One" : "Two") );
 
 		System.out.println( personOne.equals(personTwo));
+
+		Person personAnother = personOne;
+
+		System.out.println( personOne.equals(personAnother) );
+		System.out.println( personOne == personAnother );
+
+		Person personOneClone = new Person(personOne);
+		System.out.println( personOne.equals(personOneClone) );
+		System.out.println( personOne == personOneClone );
+
 	}
 }
