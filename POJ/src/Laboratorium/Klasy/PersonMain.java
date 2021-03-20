@@ -2,8 +2,8 @@ package Laboratorium.Klasy;
 
 public class PersonMain {
 	public static void main(String[] args) {
-		Person personOne = new Person("Jan", "Kowalski", 1990);
-		System.out.println(personOne);
+		Person personOne = new Person("Jan", "Kowalski", 1990, Color.GINGER);
+		System.out.println(personOne + " " + personOne.getHairColor());
 
 		personOne.setYearOfBirth(1900);
 		System.out.println(personOne);

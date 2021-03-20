@@ -6,17 +6,22 @@ public class Person {
 	private String fstName;
 	private String sndName;
 	private int yearOfBirth;
+	private Color hairColor = Color.BLOND;
 
-	public Person(String fstName, String sndName, int yearOfBirth) {
+	// DRY
+	public Person(String fstName, String sndName, int yearOfBirth, Color hairColor) {
 		this.fstName = fstName;
 		this.sndName = sndName;
 		this.yearOfBirth = yearOfBirth;
+		this.hairColor = hairColor;
+	}
+
+	public Person(String fstName, String sndName, int yearOfBirth) {
+		this(fstName, sndName, yearOfBirth, Color.BLOND);
 	}
 
 	public Person(Person person) {
-		this.fstName = person.fstName;
-		this.sndName = person.sndName;
-		this.yearOfBirth = person.yearOfBirth;
+		this(person.fstName, person.sndName, person.yearOfBirth, person.hairColor);
 	}
 
 	public String getFstName() {
@@ -37,6 +42,14 @@ public class Person {
 
 	public int getYearOfBirth() {
 		return yearOfBirth;
+	}
+
+	public Color getHairColor() {
+		return hairColor;
+	}
+
+	public void setHairColor(Color hairColor) {
+		this.hairColor = hairColor;
 	}
 
 	public void setYearOfBirth(int yearOfBirth) {
