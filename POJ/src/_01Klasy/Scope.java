@@ -2,7 +2,7 @@ package _01Klasy;
 
 // Demonstracja zakresow zmiennych
 class Scope {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		int x; // zmienna x rozpoznawalna w calej metodzie main
 
 		x = 10;

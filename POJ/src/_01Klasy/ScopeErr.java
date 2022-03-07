@@ -3,7 +3,7 @@ package _01Klasy;
 // Demonstracja przeslaniania zmiennych
 // !!! BLAD: Java nie pozwala przeslaniac zmiennych !!!
 class ScopeErr {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		int x = 1;
 		{ // tutaj zaczynamy nowy zakres
 			int y = 1;

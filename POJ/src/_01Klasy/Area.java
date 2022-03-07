@@ -9,7 +9,7 @@ class Area {
 		double p = pi * r * r;
 		System.out.println("Pole kola o promieniu " + r + " wynosi " + p);
 		// to samo przy uzyciu wbudowanego PI
-		p = Math.PI * r * r;
+		p = Math.PI * r * r * 1000 * 1000;
 		System.out.println("Pole kola o promieniu " + r + " wynosi " + p);
 		System.out.println("Pole kola o promieniu " + r + " wynosi " + (float) p);
 	}
