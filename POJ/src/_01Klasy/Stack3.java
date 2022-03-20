@@ -1,7 +1,7 @@
 package _01Klasy;
 
 class StackWithoutLimits {
-	private int stackData[];
+	private int[] stackData;
 	private int topOfStack;
 
 	public StackWithoutLimits(int sizeOfStack) {
@@ -14,10 +14,13 @@ class StackWithoutLimits {
 	}
 
 	public void push(int item) {
-		if (topOfStack == stackData.length - 1)
-			System.out.println("Stos pelen");
-		else
-			stackData[++topOfStack] = item;
+		if (topOfStack == stackData.length - 1) {
+			int[] temp = new int[2 * stackData.length];
+			for (int i = 0; i < stackData.length; i++)
+				temp[i] = stackData[i];
+			stackData = temp;
+		}
+		stackData[++topOfStack] = item;
 	}
 
 	public int pop() {
@@ -30,12 +33,15 @@ class StackWithoutLimits {
 }
 
 class StackTest {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		StackWithoutLimits myStack1 = new StackWithoutLimits(5);
 		StackWithoutLimits myStack2 = new StackWithoutLimits(8);
 
 		for (int i = 0; i < myStack1.size(); i++)
 			myStack1.push(i);
+		myStack1.push(101);
+		myStack1.push(222);
+
 		for (int i = 0; i < myStack2.size(); i++)
 			myStack2.push(i);
 

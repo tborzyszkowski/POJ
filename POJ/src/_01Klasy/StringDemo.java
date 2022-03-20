@@ -18,7 +18,7 @@ class StringDemo {
 				new Character(str.charAt(10)))
 		);
 		System.out.println();
-		String tab[] = {"Ala", "ma", "kota"};
+		String[] tab = {"Ala", "ma", "kota"};
 		for (int i = 0; i < tab.length; i++)
 			System.out.println("tab[" + i + "] = " + tab[i]);
 		// a teraz znak po znaku

@@ -13,13 +13,7 @@ class FinalAlongObject{
 	
 	FinalAlongObject(int val){
 		STALA = val;
-//		setSTALA(val);
 	}
-	
-//	void setSTALA(int val){
-//		STALA = val;
-//	}
-	
 }
 
 

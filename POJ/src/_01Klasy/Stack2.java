@@ -2,18 +2,17 @@ package _01Klasy;
 
 
 class StackEncapsulation {
-	private final int STACK_LIMIT;
 	private int[] stackData;
 	private int topOfStack;
 
 	StackEncapsulation(int stackLimit) {
-		STACK_LIMIT = stackLimit;
-		stackData = new int[STACK_LIMIT];
+		stackData = new int[stackLimit];
 		topOfStack = -1;
 	}
 
 	public void push(int item) {
-		if (topOfStack == STACK_LIMIT - 1) System.out.println("Stos pelen");
+		if (topOfStack == stackData.length - 1)
+			System.out.println("Stos pelen");
 		else stackData[++topOfStack] = item;
 	}
 
@@ -27,7 +26,7 @@ class StackEncapsulation {
 }
 
 class Stack2 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		StackEncapsulation myStack1 = new StackEncapsulation(10);
 		StackEncapsulation myStack2 = new StackEncapsulation(10);
 
