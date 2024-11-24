@@ -35,7 +35,7 @@ class DynStack implements IntStack {
 }
 
 class IFTest2 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		DynStack myStack1 = new DynStack(5);
 		DynStack myStack2 = new DynStack(8);
 
@@ -59,7 +59,7 @@ class IFTest2 {
 }
 
 class IFTest3 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		IntStack myStack;
 		DynStack ds = new DynStack(5);
 		FixedStack fs = new FixedStack(8);

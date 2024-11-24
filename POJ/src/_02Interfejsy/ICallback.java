@@ -14,7 +14,7 @@ class Client implements ICallback {
 				+ "implementowac metody spoza interfejsu");
 	}
 }
-class TestIface {
+class FirstIface {
 	public static void main(String[] args) {
 		ICallback c = new Client();
 
